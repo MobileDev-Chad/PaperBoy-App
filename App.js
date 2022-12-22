@@ -2,23 +2,27 @@ import React, { useCallback } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
 
 // import store and provider
 import { persistor, store } from "./src/redux/store";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
+import { Cart, HomeScreen, WelcomeScreen } from "./src/screens";
 
-SplashScreen.preventAutoHideAsync();
-
-import {Cart} from "./src/screens";
+const theme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    border: "transparent",
+  },
+};
 
 const Stack = createNativeStackNavigator();
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
-
-  
   const [fontsLoaded] = useFonts({
     "Roboto-Black": require("./src/assets/fonts/Roboto-Black.ttf"),
     "Roboto-Bold": require("./src/assets/fonts/Roboto-Bold.ttf"),
@@ -35,22 +39,19 @@ export default function App() {
     return null;
   }
 
-
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <View  style ={{flex:1}}onLayout={onLayoutRootView}>
-          <NavigationContainer>
-
-          <Stack.Navigator screenOptions={{ headerShown: false }}>
-            <Stack.Screen
-              name="Cart"
-              component={Cart}
-              options={{ headerShown: false }}
+        <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
+          <NavigationContainer theme={theme}>
+            <Stack.Navigator screenOptions={{ headerShown: false }}>
+              <Stack.Screen
+                name="Welcome"
+                component={WelcomeScreen}
+                options={{ headerShown: false }}
               />
-           
-          </Stack.Navigator>
-              </NavigationContainer>
+            </Stack.Navigator>
+          </NavigationContainer>
         </View>
       </PersistGate>
     </Provider>
