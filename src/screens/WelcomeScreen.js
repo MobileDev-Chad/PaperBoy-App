@@ -1,8 +1,13 @@
 import React from 'react'
+import { View, Text } from 'react-native'
+import Screen from '../components/Screen'
 
 const WelcomeScreen = () => {
   return (
-    <div>WelcomeScreen</div>
+    <Screen>
+
+        <Text>WelcomeScreen</Text>
+    </Screen>
   )
 }
 
