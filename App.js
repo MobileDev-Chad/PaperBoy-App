@@ -17,6 +17,8 @@ import {Cart} from "./src/screens";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+
+  
   const [fontsLoaded] = useFonts({
     "Roboto-Black": require("./src/assets/fonts/Roboto-Black.ttf"),
     "Roboto-Bold": require("./src/assets/fonts/Roboto-Bold.ttf"),
