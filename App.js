@@ -1,15 +1,17 @@
 import React, { useCallback } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
+import { icons, COLORS, SIZES, FONTS } from "./src/constants";
 
 // import store and provider
 import { persistor, store } from "./src/redux/store";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { Cart, HomeScreen, WelcomeScreen } from "./src/screens";
+import { DebugInstructions } from "react-native/Libraries/NewAppScreen";
 
 const theme = {
   ...DefaultTheme,
@@ -44,11 +46,25 @@ export default function App() {
       <PersistGate loading={null} persistor={persistor}>
         <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
           <NavigationContainer theme={theme}>
-            <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Navigator initialRouteName="Welcome">
               <Stack.Screen
                 name="Welcome"
                 component={WelcomeScreen}
-                options={{ headerShown: false }}
+                options={{
+                  title: null,
+                  headerStyle: {
+                    backgroundColor: COLORS.white,
+                  },
+                  headerLeft: null,
+                  headerRight: () => (
+                    <TouchableOpacity
+                      style={{ marginRight: SIZES.padding }}
+                      onPress={() => console.log("Pressed")}
+                    >
+                      <Image source={icons.menu} />
+                    </TouchableOpacity>
+                  ),
+                }}
               />
             </Stack.Navigator>
           </NavigationContainer>
