@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View, Image } from "react-native";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -11,7 +11,6 @@ import { persistor, store } from "./src/redux/store";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { Cart, HomeScreen, WelcomeScreen } from "./src/screens";
-import { DebugInstructions } from "react-native/Libraries/NewAppScreen";
 
 const theme = {
   ...DefaultTheme,
@@ -61,7 +60,11 @@ export default function App() {
                       style={{ marginRight: SIZES.padding }}
                       onPress={() => console.log("Pressed")}
                     >
-                      <Image source={icons.menu} />
+                      <Image
+                        source={icons.menu}
+                        resizeMode="contain"
+                        style={{ width: 25, height: 25 }}
+                      />
                     </TouchableOpacity>
                   ),
                 }}
