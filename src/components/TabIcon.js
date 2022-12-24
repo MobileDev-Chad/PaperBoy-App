@@ -1,5 +1,9 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
+import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
+import EntypoIcon from 'react-native-vector-icons/Entypo';
+import AntDesignIcon from 'react-native-vector-icons/AntDesign';
+
 import { COLORS } from '../constants';
 import PropTypes from 'prop-types';
 
@@ -9,9 +13,9 @@ export default TabIcon = ({ name, color, style, type }) => {
     <>
       {(() => {
         switch (type) {
-          case 'material':
+          case 'fontAwesome':
             return (
-              <Icon
+              <FontAwesomeIcon
                 style={style ? style : {}}
                 name={name}
                 size={24}
@@ -21,6 +25,15 @@ export default TabIcon = ({ name, color, style, type }) => {
           case 'entypo':
             return (
               <EntypoIcon
+                style={style ? style : {}}
+                name={name}
+                size={24}
+                color={color}
+              />
+            );
+          case 'antDesign':
+            return (
+              <AntDesignIcon
                 style={style ? style : {}}
                 name={name}
                 size={24}
@@ -65,5 +78,5 @@ TabIcon.propTypes = {
   type: PropTypes.string,
 };
 TabIcon.defaultProps = {
-  type: 'material',
+  type: 'fontAwesome',
 };
