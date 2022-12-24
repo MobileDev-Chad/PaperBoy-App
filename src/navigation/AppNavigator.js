@@ -83,18 +83,18 @@ export default AppNavigator = (props) => {
       </Tab.Screen> */}
 
       <Tab.Screen
-        name="Settings"
-        component={Settings}
+        name="Contact"
+        component={ContactScreen}
         options={{
           tabBarIcon: ({ focused, color }) => (
-            <TabIcon name="settings" color={color} focused={focused} />
+            <TabIcon name="settings" color={color} type="entypo"focused={focused} />
           ),
           headerShown: false,
         }}
       />
 
       <Tab.Screen
-        name="cart"
+        name="Cart"
         component={Cart}
         options={{
           tabBarIcon: ({ focused, color }) => (
