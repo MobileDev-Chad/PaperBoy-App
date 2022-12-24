@@ -2,12 +2,11 @@ import React from "react";
 import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { COLORS, images, SIZES, FONTS } from "../constants";
+import { useNavigation } from '@react-navigation/native';
 import Screen from "../components/Screen";
-import useAuth from '../auth/useAuth';
 
 const WelcomeScreen = () => {
-  const auth = useAuth();
-
+  const navigation = useNavigation(); 
   // Render
   return (
     <Screen>
@@ -43,7 +42,7 @@ const WelcomeScreen = () => {
             alignItems: "center",
             justifyContent: "center",
           }]}
-          onPress={() => auth.logIn("Guest")}
+            onPress={() => navigation.navigate('AppNavigator')}
         >
           <LinearGradient
             style={{
