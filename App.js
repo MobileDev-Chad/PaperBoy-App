@@ -1,16 +1,12 @@
 import React, { useCallback } from "react";
-import { StyleSheet, TouchableOpacity, View, Image } from "react-native";
+import { StyleSheet, View, } from "react-native";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
-import { icons, COLORS, SIZES, FONTS } from "./src/constants";
-
-// import store and provider
-import { persistor, store } from "./src/redux/store";
-import { Provider } from "react-redux";
-import { PersistGate } from "redux-persist/integration/react";
-import { Cart, HomeScreen, WelcomeScreen } from "./src/screens";
+import { AuthProvider } from './src/auth/context';
+import AppNavigator from "./src/navigation/AppNavigator";
+import AuthNavigator from "./src/navigation/AuthNavigator";
+import { navigationRef } from "./src/navigation/rootNavigation";
 
 const theme = {
   ...DefaultTheme,
@@ -20,7 +16,6 @@ const theme = {
   },
 };
 
-const Stack = createNativeStackNavigator();
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {
@@ -41,39 +36,15 @@ export default function App() {
   }
 
   return (
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
-          <NavigationContainer theme={theme}>
-            <Stack.Navigator initialRouteName="Welcome">
-              <Stack.Screen
-                name="Welcome"
-                component={WelcomeScreen}
-                options={{
-                  title: null,
-                  headerStyle: {
-                    backgroundColor: COLORS.white,
-                  },
-                  headerLeft: null,
-                  headerRight: () => (
-                    <TouchableOpacity
-                      style={{ marginRight: SIZES.padding }}
-                      onPress={() => console.log("Pressed")}
-                    >
-                      <Image
-                        source={icons.menu}
-                        resizeMode="contain"
-                        style={{ width: 25, height: 25 }}
-                      />
-                    </TouchableOpacity>
-                  ),
-                }}
-              />
-            </Stack.Navigator>
+    <AuthProvider value={{ currentUser }}>
+      <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
+        <PaperProvider theme={theme}>
+          <NavigationContainer ref={navigationRef}>
+            {currentUser ? <AppNavigator /> : <AuthNavigator />}
           </NavigationContainer>
-        </View>
-      </PersistGate>
-    </Provider>
+        </PaperProvider>
+      </View>
+    </AuthProvider>
   );
 }
 
