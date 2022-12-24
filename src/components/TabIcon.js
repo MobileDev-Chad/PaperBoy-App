@@ -18,7 +18,7 @@ export default TabIcon = ({ name, color, style, type }) => {
               <FontAwesomeIcon
                 style={style ? style : {}}
                 name={name}
-                size={24}
+                size={30}
                 color={color}
               />
             );
@@ -27,7 +27,7 @@ export default TabIcon = ({ name, color, style, type }) => {
               <EntypoIcon
                 style={style ? style : {}}
                 name={name}
-                size={24}
+                size={30}
                 color={color}
               />
             );
@@ -36,39 +36,39 @@ export default TabIcon = ({ name, color, style, type }) => {
               <AntDesignIcon
                 style={style ? style : {}}
                 name={name}
-                size={24}
+                size={30}
                 color={color}
               />
             );
-          case 'rounded':
-            return (
-              <View style={styles.rounded}>
-                <EntypoIcon
-                  style={style ? style : {}}
-                  name={name}
-                  size={24}
-                  color={
-                    color === COLORS.inactiveGreyColor
-                      ? COLORS.white
-                      : color
-                  }
-                />
-              </View>
-            );
+          // case 'rounded':
+          //   return (
+          //     <View style={styles.rounded}>
+          //       <EntypoIcon
+          //         style={style ? style : {}}
+          //         name={name}
+          //         size={24}
+          //         color={
+          //           color === COLORS.inactiveGreyColor
+          //             ? COLORS.white
+          //             : color
+          //         }
+          //       />
+          //     </View>
+          //   );
         }
       })()}
     </>
   );
 };
 const styles = StyleSheet.create({
-  rounded: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    backgroundColor: theme.colors.inactiveGreyColor,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
+  // rounded: {
+  //   width: 40,
+  //   height: 40,
+  //   borderRadius: 20,
+  //   backgroundColor: theme.colors.inactiveGreyColor,
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  // },
 });
 
 TabIcon.propTypes = {
