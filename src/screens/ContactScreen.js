@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { View, Text } from "react-native";
+import Screen from "../components/Screen";
 
 const ContactScreen = () => {
   return (
-    <div>ContactScreen</div>
-  )
-}
+    <Screen>
+      <Text>ContactScreen</Text>
+    </Screen>
+  );
+};
 
-export default ContactScreen
+export default ContactScreen;
