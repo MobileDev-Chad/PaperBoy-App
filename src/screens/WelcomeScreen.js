@@ -3,10 +3,12 @@ import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { COLORS, images, SIZES, FONTS } from "../constants";
 import Screen from "../components/Screen";
+import useAuth from '../auth/useAuth';
 
-const WelcomeScreen = ({ navigation }) => {
+const WelcomeScreen = () => {
+  const auth = useAuth();
+
   // Render
-
   return (
     <Screen>
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
@@ -41,7 +43,7 @@ const WelcomeScreen = ({ navigation }) => {
             alignItems: "center",
             justifyContent: "center",
           }]}
-          onPress={() => navigation.navigate("Home")}
+          onPress={() => auth.logIn("Guest")}
         >
           <LinearGradient
             style={{
