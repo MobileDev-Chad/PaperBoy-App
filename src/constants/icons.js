@@ -3,7 +3,8 @@ export const cart = require("../assets/icons/cart.png");
 export const email = require("../assets/icons/email.png");
 export const home = require("../assets/icons/home.png");
 export const magnify = require("../assets/icons/magnify.png");
-export const menu = require("../assets/icons/bar_menu.png");
+export const bar = require("../assets/icons/bar_menu.png");
+export const menu = require("../assets/icons/menu_icon.png");
 
 export default {
     back,
@@ -11,5 +12,6 @@ export default {
     email,
     home,
     magnify,
+    bar, 
     menu
 }
