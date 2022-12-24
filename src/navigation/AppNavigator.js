@@ -46,23 +46,18 @@ export default AppNavigator = (props) => {
         )}
       </Tab.Screen>
 
-      {/* <Tab.Screen
-        name="Ranking"
-        component={Ranking}
+      <Tab.Screen
+        name="Search"
+        component={SearchScreen}
         options={{
           tabBarIcon: ({ focused, color }) => (
-            <TabIcon
-              name="bar-graph"
-              color={color}
-              type="entypo"
-              focused={focused}
-            />
+            <TabIcon name="search" color={color} focused={focused} />
           ),
           headerShown: false,
         }}
       />
 
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Play"
         options={{
           unmountOnBlur: true,
@@ -85,22 +80,7 @@ export default AppNavigator = (props) => {
             <GameStack.Screen name="GamePlay" component={GamePlay} />
           </GameStack.Navigator>
         )}
-      </Tab.Screen>
-
-      <Tab.Screen
-        name="Friends"
-        component={Friends}
-        options={{
-          tabBarIcon: ({ focused, color }) => (
-            <TabIcon
-              name="supervisor-account"
-              color={color}
-              focused={focused}
-            />
-          ),
-          headerShown: false,
-        }}
-      />
+      </Tab.Screen> */}
 
       <Tab.Screen
         name="Settings"
@@ -111,7 +91,18 @@ export default AppNavigator = (props) => {
           ),
           headerShown: false,
         }}
-      /> */}
+      />
+
+      <Tab.Screen
+        name="cart"
+        component={Cart}
+        options={{
+          tabBarIcon: ({ focused, color }) => (
+            <TabIcon name="shopping-cart" color={color} focused={focused} />
+          ),
+          headerShown: false,
+        }}
+      />
     </Tab.Navigator>
   );
 };
