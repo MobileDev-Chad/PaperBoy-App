@@ -6,12 +6,13 @@ import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { WelcomeScreen } from "./src/screens";
 import { COLORS, SIZES, icons } from "./src/constants";
+import AppNavigator from "./src/navigation/AppNavigator";
+import { navigationRef } from "./src/navigation/rootNavigation";
 
 // import store and provider
 import { persistor, store } from "./src/redux/store";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-import AppNavigator from "./src/navigation/AppNavigator";
 
 const theme = {
   ...DefaultTheme,
@@ -46,8 +47,9 @@ export default function App() {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
-          <NavigationContainer theme={theme}>
+          <NavigationContainer theme={theme} ref={navigationRef}>
             <Stack.Navigator initialRouteName={"Welcome"}>
+
               {/* Screens */}
               <Stack.Screen
                 name="Welcome"
