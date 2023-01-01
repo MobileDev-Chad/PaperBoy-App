@@ -1,7 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { HomeScreen, DetailsScreen } from "../screens";
-import { COLORS, icons } from "../constants";
 
 const Stack = createStackNavigator();
 
