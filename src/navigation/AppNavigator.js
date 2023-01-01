@@ -1,11 +1,10 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import TabIcon from "../components/TabIcon";
 import HomeNavigator from "./HomeNavigator";
-import {ContactScreen,SearchScreen, Cart} from "../screens"
+import { ContactScreen, SearchScreen, Cart } from "../screens";
 import { COLORS } from "../constants";
 
 const Tab = createBottomTabNavigator();
-
 
 export default AppNavigator = () => {
   const tabOptions = {
@@ -37,8 +36,7 @@ export default AppNavigator = () => {
           ),
           headerShown: false,
         }}
-      >
-      </Tab.Screen>
+      ></Tab.Screen>
 
       <Tab.Screen
         name="Search"
@@ -56,7 +54,12 @@ export default AppNavigator = () => {
         component={ContactScreen}
         options={{
           tabBarIcon: ({ focused, color }) => (
-            <TabIcon name="email" color={color} type="entypo" focused={focused} />
+            <TabIcon
+              name="email"
+              color={color}
+              type="entypo"
+              focused={focused}
+            />
           ),
           headerShown: false,
         }}
