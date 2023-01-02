@@ -21,7 +21,7 @@ const OptionItem = ({ icon, bgColor, franchise, onPress }) => {
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        marginHorizontal: SIZES.radius,
+        marginHorizontal: SIZES.base * 2,
         marginBottom: SIZES.base,
       }}
       onPress={onPress}
@@ -92,18 +92,17 @@ const HomeScreen = () => {
             renderItem={({ item }) => (
               <OptionItem
                 icon={item.icon}
-                bgColor={["#46eff", "#5884ff"]}
+                bgColor={[item.background_one, item.background_two]}
                 franchise={item.franchise}
                 onPress={() => setFranchise(`${franchise}`)}
               />
             )}
-            
           />
         </ScrollView>
       </View>
       {/* Characters */}
       <View style={{ flex: 1 }}>
-      {CharacterList.filter((characters) => {
+        {CharacterList.filter((characters) => {
           if (franchise === "") {
             return CharacterList;
           } else if (franchise === "All") {
@@ -112,11 +111,7 @@ const HomeScreen = () => {
             return characters;
           }
         }).map(({ id, portrait, name, price }) => {
-          return (
-            <>
-              
-            </>
-          );
+          return <></>;
         })}
       </View>
     </Screen>
