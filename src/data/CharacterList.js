@@ -45,7 +45,7 @@ export const CharacterList = [
 
     price: "4.99",
     icon: "https://res.cloudinary.com/dare4cvkk/image/upload/v1669681201/Smash%20Characters/11_-_fcCLhoC_dietap.png",
-    franchise: "The Legend of Zelda",
+    franchise: "Zelda",
   },
   {
     alsoAppearsIn: ["SSB", "Melee", "Brawl", "SSB4"],
@@ -300,7 +300,7 @@ export const CharacterList = [
 
     price: "4.99",
     icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501930/Series/the-legend-of-zelda_naf34b.svg",
-    franchise: "The Legend of Zelda",
+    franchise: "Zelda",
   },
   {
     alsoAppearsIn: ["Brawl", "SSB4"],
@@ -317,7 +317,7 @@ export const CharacterList = [
 
     price: "4.99",
     icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501930/Series/the-legend-of-zelda_naf34b.svg",
-    franchise: "The Legend of Zelda",
+    franchise: "Zelda",
   },
   {
     alsoAppearsIn: ["SSB4"],
@@ -419,7 +419,7 @@ export const CharacterList = [
 
     price: "4.99",
     icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501930/Series/the-legend-of-zelda_naf34b.svg",
-    franchise: "The Legend of Zelda",
+    franchise: "Zelda",
   },
   {
     alsoAppearsIn: ["Melee", "Brawl", "SSB4"],
@@ -436,7 +436,7 @@ export const CharacterList = [
 
     price: "4.99",
     icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501930/Series/the-legend-of-zelda_naf34b.svg",
-    franchise: "The Legend of Zelda",
+    franchise: "Zelda",
   },
   {
     alsoAppearsIn: ["Melee", "SSB4"],
@@ -776,7 +776,7 @@ export const CharacterList = [
 
     price: "4.99",
     icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501930/Series/the-legend-of-zelda_naf34b.svg",
-    franchise: "The Legend of Zelda",
+    franchise: "Zelda",
   },
   {
     alsoAppearsIn: ["Brawl"],
@@ -912,7 +912,7 @@ export const CharacterList = [
 
     price: "4.99",
     icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595552332/Series/ofc2xcyawclffowvoqu1.svg",
-    franchise: "Super Smash Bros.",
+    franchise: "Ultimate",
   },
   {
     alsoAppearsIn: ["SSB4"],
@@ -929,7 +929,7 @@ export const CharacterList = [
 
     price: "4.99",
     icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595552332/Series/ofc2xcyawclffowvoqu1.svg",
-    franchise: "Super Smash Bros.",
+    franchise: "Ultimate",
   },
   {
     alsoAppearsIn: ["SSB4"],
@@ -946,7 +946,7 @@ export const CharacterList = [
 
     price: "4.99",
     icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595552332/Series/ofc2xcyawclffowvoqu1.svg",
-    franchise: "Super Smash Bros.",
+    franchise: "Ultimate",
   },
   {
     alsoAppearsIn: ["SSB4"],
@@ -1014,7 +1014,7 @@ export const CharacterList = [
 
     price: "4.99",
     icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553030/Series/a1pc0xxngopvv6i8u60k.svg",
-    franchise: "Xenoblade Chronicles",
+    franchise: "Xenoblade",
   },
   {
     alsoAppearsIn: ["SSB4"],
@@ -1388,7 +1388,7 @@ export const CharacterList = [
 
     price: "6.99",
     icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553030/Series/a1pc0xxngopvv6i8u60k.svg",
-    franchise: "Xenoblade Chronicles",
+    franchise: "Xenoblade",
   },
   {
     alsoAppearsIn: ["SSBU"],
@@ -1405,7 +1405,7 @@ export const CharacterList = [
 
     price: "6.99",
     icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553030/Series/a1pc0xxngopvv6i8u60k.svg",
-    franchise: "Xenoblade Chronicles",
+    franchise: "Xenoblade",
   },
   {
     alsoAppearsIn: ["SSBU"],
