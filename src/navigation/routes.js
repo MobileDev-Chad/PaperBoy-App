@@ -1,5 +1,5 @@
 export default Object.freeze({
-  DETAILS_SCREEN: "DetailsScreen",
+  CHARACTER_DETAILS: "Details",
   CART: "Cart",
   SEARCH_SCREEN: "Search",
   CONTACT: "Contact",
