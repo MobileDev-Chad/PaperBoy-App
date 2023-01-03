@@ -8,7 +8,7 @@ const HomeNavigator = () => (
   <Stack.Navigator presentaion="modal" screenOptions={{ headerShown: false }}>
     <Stack.Screen name="Home" component={HomeScreen} />
 
-    <Stack.Screen name="DetailsScreen" component={DetailsScreen} />
+    <Stack.Screen name="Details" component={DetailsScreen} />
   </Stack.Navigator>
 );
 

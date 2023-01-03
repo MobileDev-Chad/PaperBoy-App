@@ -11,6 +11,7 @@ import React, { useState } from "react";
 import Screen from "../components/Screen";
 import CharacterList from "../data/CharacterList";
 import FranchiseList from "../data/FranchiseList";
+import routes from "../navigation/routes";
 import { LinearGradient } from "expo-linear-gradient";
 import { COLORS, FONTS, images, SIZES } from "../constants";
 
@@ -21,8 +22,7 @@ const OptionItem = ({ icon, bgColor, franchise, onPress }) => {
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        marginHorizontal: SIZES.base * 2,
-        marginBottom: SIZES.base,
+        marginHorizontal: SIZES.base * 0.6,
       }}
       onPress={onPress}
     >
@@ -39,14 +39,14 @@ const OptionItem = ({ icon, bgColor, franchise, onPress }) => {
           end={{ x: 0, y: 1 }}
         >
           <Image
-            source={icon}
+            source={{ uri: icon }}
             resizeMode="cover"
-            style={{ tintColor: COLORS.white, width: 30, height: 30 }}
+            style={{ tintColor: COLORS.white, width: 40, height: 40 }}
           />
         </LinearGradient>
       </View>
       <Text
-        style={{ marginTop: SIZES.base, color: COLORS.gray, ...FONTS.body4 }}
+        style={{ marginTop: SIZES.base / 2, color: COLORS.gray, ...FONTS.body4 }}
       >
         {franchise}
       </Text>
@@ -54,12 +54,13 @@ const OptionItem = ({ icon, bgColor, franchise, onPress }) => {
   );
 };
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   const [franchise, setFranchise] = useState("");
 
   return (
     <Screen>
       {/* Banner */}
+
       <View
         style={{
           flex: 1,
@@ -73,8 +74,10 @@ const HomeScreen = () => {
           style={{ width: "100%", height: "100%", borderRadius: 15 }}
         />
       </View>
+
       {/* Franchise */}
-      <View style={{ flex: 1 }}>
+
+      <View style={{ flex: 1, paddingHorizontal:SIZES.padding }}>
         <ScrollView
           horizontal
           showsVerticalScrollIndicator={false}
@@ -82,9 +85,7 @@ const HomeScreen = () => {
         >
           <FlatList
             contentContainerStyle={{
-              alignSelf: "flex-start",
-              marginTop: SIZES.padding,
-              paddingHorizontal: SIZES.base,
+              marginTop: SIZES.base * 1.5,
             }}
             numColumns={Math.ceil(FranchiseList.length / 2)}
             data={FranchiseList}
@@ -94,25 +95,82 @@ const HomeScreen = () => {
                 icon={item.icon}
                 bgColor={[item.background_one, item.background_two]}
                 franchise={item.franchise}
-                onPress={() => setFranchise(`${franchise}`)}
+                onPress={() => setFranchise(`${item.franchise}`)}
               />
             )}
           />
         </ScrollView>
       </View>
       {/* Characters */}
+
       <View style={{ flex: 1 }}>
-        {CharacterList.filter((characters) => {
-          if (franchise === "") {
-            return CharacterList;
-          } else if (franchise === "All") {
-            return CharacterList;
-          } else if (franchise === characters.franchise) {
-            return characters;
-          }
-        }).map(({ id, portrait, name, price }) => {
-          return <></>;
-        })}
+        <Text
+          style={{
+            marginTop: SIZES.base,
+            marginHorizontal: SIZES.padding,
+            ...FONTS.h2,
+          }}
+        >
+          Characters
+        </Text>
+
+        <ScrollView
+          horizontal
+          showsVerticalScrollIndicator={false}
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={{
+            marginTop: SIZES.base,
+            paddingBottom: SIZES.radius,
+          }}
+        >
+          {CharacterList.filter((characters) => {
+            if (franchise === "") {
+              return CharacterList;
+            } else if (franchise === characters.series.name) {
+              return characters;
+            }
+          }).map((item, index) => {
+          
+
+            return (
+              <View>
+                <TouchableOpacity
+                  key={item.id}
+                  style={{
+                    justifyContent: "center",
+                    marginHorizontal: SIZES.base,
+                  }}
+                  onPress={() => {
+                    navigation.navigate(routes.CHARACTER_DETAILS, item);
+                  }}
+                >
+                  <Image
+                    source={{ uri: item.images.portrait }}
+                    resizeMode="contain"
+                    style={{
+                      width: SIZES.width * 0.28,
+                      height: "82%",
+                      borderRadius: 15,
+                    }}
+                  />
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      marginTop: SIZES.base / 2,
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Text style={{ ...FONTS.h4 }}>{item.name}</Text>
+                    <Text style={{ color: COLORS.darkgreen }}>
+                      ${item.series.price}
+                    </Text>
+                  </View>
+                </TouchableOpacity>
+              </View>
+            );
+          })}
+        </ScrollView>
       </View>
     </Screen>
   );

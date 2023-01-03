@@ -4,9 +4,7 @@ import Screen from "../components/Screen";
 
 const DetailsScreen = () => {
   return (
-    <Screen>
       <Text>DetailsScreen</Text>
-    </Screen>
   );
 };
 
