@@ -295,9 +295,6 @@ export const FranchiseList = [
   },
   {
     id: "82",
-    icon: "https://res.cloudinary.com/dare4cvkk/image/upload/v1672628121/icons%20smash/KingdomHeartsSymbol_o0aigz.png",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/KingdomHeartsSymbol.png")
     ).uri,
