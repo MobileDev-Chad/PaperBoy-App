@@ -4,7 +4,7 @@ import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { WelcomeScreen } from "./src/screens";
+import { WelcomeScreen,DetailsScreen } from "./src/screens";
 import { COLORS, SIZES, icons } from "./src/constants";
 import AppNavigator from "./src/navigation/AppNavigator";
 import { navigationRef } from "./src/navigation/rootNavigation";
@@ -79,10 +79,12 @@ export default function App() {
               />
 
               {/* Tabs */}
+             
               <Stack.Screen
                 name="AppNavigator"
                 component={AppNavigator}
                 options={{
+                  headerShown: false,
                   title: null,
                   headerStyle: {
                     backgroundColor: COLORS.white,
