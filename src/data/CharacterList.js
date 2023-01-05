@@ -10,6 +10,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/q_auto:low/v1594501674/Ultimate%20Characters/Icons/120px-MarioHeadSSBUWebsite_hkzzpq.png",
       portrait: Asset.fromModule(require("../assets/images/Mario.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Mario.png")
+      ).uri,
     },
     name: "Mario",
     id: "1",
@@ -29,6 +32,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501698/Ultimate%20Characters/Icons/120px-DonkeyKongHeadSSBUWebsite_h8qz9i.png",
       portrait: Asset.fromModule(require("../assets/images/Donkey_Kong.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Donkey_Kong.png")
+      ).uri,
     },
     name: "Donkey Kong",
     id: "2",
@@ -47,6 +53,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501722/Ultimate%20Characters/Icons/120px-LinkHeadSSBUWebsite_pzo2jz.png",
       portrait: Asset.fromModule(require("../assets/images/Link.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Link.png")
+      ).uri,
     },
     name: "Link",
     id: "3",
@@ -65,6 +74,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595194655/Ultimate%20Characters/Icons/i5rvljkpajr2rqkflkmm.png",
       portrait: Asset.fromModule(require("../assets/images/Samus.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Samus.png")
+      ).uri,
     },
     name: "Samus",
     id: "4",
@@ -84,6 +96,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595196410/Ultimate%20Characters/Icons/sjopx966kkczkijelpim.png",
       portrait: Asset.fromModule(require("../assets/images/Dark_Samus.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Dark_Samus.png")
+      ).uri,
     },
     name: "Dark Samus",
     id: "104",
@@ -102,6 +117,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595197033/Ultimate%20Characters/Icons/yzfsd5sz2h6izdgre4ub.png",
       portrait: Asset.fromModule(require("../assets/images/Yoshi.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Yoshi.png")
+      ).uri,
     },
     name: "Yoshi",
     id: "5",
@@ -120,6 +138,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198280/Ultimate%20Characters/Icons/b3xbw1uwuhubocyibecv.png",
       portrait: Asset.fromModule(require("../assets/images/Kirby.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Kirby.png")
+      ).uri,
     },
     name: "Kirby",
     id: "6",
@@ -138,6 +159,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198574/Ultimate%20Characters/Icons/ahaz2u4oaenmzgqhrpz6.png",
       portrait: Asset.fromModule(require("../assets/images/Fox.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Fox.png")
+      ).uri,
     },
     name: "Fox",
     id: "7",
@@ -156,6 +180,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198731/Ultimate%20Characters/Icons/o07zv6beydfx0erkavfk.png",
       portrait: Asset.fromModule(require("../assets/images/Pikachu.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Image/Pikachu.png")
+      ).uri,
     },
     name: "Pikachu",
     id: "8",
@@ -174,6 +201,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595199027/Ultimate%20Characters/Icons/bhciash4n90qbxy4bu3e.png",
       portrait: Asset.fromModule(require("../assets/images/Luigi.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Luigi.png")
+      ).uri,
     },
     name: "Luigi",
     id: "9",
@@ -192,6 +222,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595199211/Ultimate%20Characters/Icons/eyzbbk2u1upzrfuxzpxo.png",
       portrait: Asset.fromModule(require("../assets/images/Ness.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Ness.png")
+      ).uri,
     },
     name: "Ness",
     id: "10",
@@ -211,6 +244,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595199362/Ultimate%20Characters/Icons/oeseikgvv04jdik1m47l.png",
       portrait: Asset.fromModule(require("../assets/images/Captain_Falcon.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Captain_Falcon.png")
+      ).uri,
     },
     name: "Captain Falcon",
     id: "11",
@@ -230,6 +266,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595199643/Ultimate%20Characters/Icons/vgbgm6ao6yrpfae0chmk.png",
       portrait: Asset.fromModule(require("../assets/images/Jigglypuff.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/JigglyPuff.png")
+      ).uri,
     },
     name: "Jigglypuff",
     id: "12",
@@ -248,6 +287,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595210915/Ultimate%20Characters/Icons/adenccvsngq5mmxtgg6c.png",
       portrait: Asset.fromModule(require("../assets/images/Peach.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Peach.png")
+      ).uri,
     },
     name: "Peach",
     id: "13",
@@ -284,6 +326,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595211321/Ultimate%20Characters/Icons/ku5bfpewtw5qvvxrbbyc.png",
       portrait: Asset.fromModule(require("../assets/images/Bowser.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Bowser.png")
+      ).uri,
     },
     name: "Bowser",
     id: "14",
@@ -303,6 +348,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595211554/Ultimate%20Characters/Icons/f0x0erel0h87cko9qgyl.png",
       portrait: Asset.fromModule(require("../assets/images/Ice_Climbers.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Ice_Climbers.png")
+      ).uri,
     },
     name: "Ice Climbers",
     id: "15",
@@ -321,6 +369,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595211924/Ultimate%20Characters/Icons/kxacuatj0g1lhvawmlib.png",
       portrait: Asset.fromModule(require("../assets/images/Sheik.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Sheik.png")
+      ).uri,
     },
     name: "Sheik",
     id: "16",
@@ -339,6 +390,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595212046/Ultimate%20Characters/Icons/yl8te2a0y3k9tuhs2onr.png",
       portrait: Asset.fromModule(require("../assets/images/Zelda.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Zelda.png")
+      ).uri,
     },
     name: "Zelda",
     id: "17",
@@ -357,6 +411,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595212315/Ultimate%20Characters/Icons/wz4wmoj8ky5wbdsxfz9l.png",
       portrait: Asset.fromModule(require("../assets/images/Dr.Mario.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Dr.Mario.png")
+      ).uri,
     },
     name: "Dr. Mario",
     id: "18",
@@ -375,6 +432,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595212716/Ultimate%20Characters/Icons/h1tn2ec517gvnvze1jns.png",
       portrait: Asset.fromModule(require("../assets/images/Pichu.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Pichu.png")
+      ).uri,
     },
     name: "Pichu",
     id: "19",
@@ -393,6 +453,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595212959/Ultimate%20Characters/Icons/g7chnuctc9jy3jclrnuf.png",
       portrait: Asset.fromModule(require("../assets/images/Falco.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Falco.png")
+      ).uri,
     },
     name: "Falco",
     id: "20",
@@ -411,6 +474,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213106/Ultimate%20Characters/Icons/hcz3nbywrdgd1zgu5lvg.png",
       portrait: Asset.fromModule(require("../assets/images/Marth.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Marth.png")
+      ).uri,
     },
     name: "Marth",
     id: "21",
@@ -429,6 +495,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213224/Ultimate%20Characters/Icons/qfucv1c7wobimkzaltwl.png",
       portrait: Asset.fromModule(require("../assets/images/Lucina.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Lucina.png")
+      ).uri,
     },
     name: "Lucina",
     id: "1021",
@@ -448,6 +517,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213463/Ultimate%20Characters/Icons/ratlejqm8xek4wrl8ad1.png",
       portrait: Asset.fromModule(require("../assets/images/Young_Link.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Young_Link.png")
+      ).uri,
     },
     name: "Young Link",
     id: "22",
@@ -466,6 +538,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213635/Ultimate%20Characters/Icons/nidtfbolm0wpkw400auw.png",
       portrait: Asset.fromModule(require("../assets/images/Ganondorf.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Ganondorf.png")
+      ).uri,
     },
     name: "Ganondorf",
     id: "23",
@@ -484,6 +559,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213769/Ultimate%20Characters/Icons/zpde70pzlkxolgrfbdya.png",
       portrait: Asset.fromModule(require("../assets/images/Mewtwo.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/MewTwo.png")
+      ).uri,
     },
     name: "Mewtwo",
     id: "24",
@@ -502,6 +580,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213882/Ultimate%20Characters/Icons/pj3iad6leump9k0jx1hj.png",
       portrait: Asset.fromModule(require("../assets/images/Roy.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Roy.png")
+      ).uri,
     },
     name: "Roy",
     id: "25",
@@ -520,6 +601,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213968/Ultimate%20Characters/Icons/j0qwtq8tpcengvaymmce.png",
       portrait: Asset.fromModule(require("../assets/images/Chrom.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Chrom.png")
+      ).uri,
     },
     name: "Chrom",
     id: "1025",
@@ -539,6 +623,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595214130/Ultimate%20Characters/Icons/ycqk3kzvmb3todifwfpn.png",
       portrait: Asset.fromModule(require("../assets/images/Mr.Game_Watch.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Mr.Game_Watch.png")
+      ).uri,
     },
     name: "Mr. Game & Watch",
     id: "26",
@@ -558,6 +645,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595263616/Ultimate%20Characters/Icons/gy3ymahlwvsgptwfrypu.png",
       portrait: Asset.fromModule(require("../assets/images/Meta_Knight.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Meta_Knight.png")
+      ).uri,
     },
     name: "Meta Knight",
     id: "27",
@@ -576,6 +666,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595263748/Ultimate%20Characters/Icons/fedzu1dun3ahpda0lwve.png",
       portrait: Asset.fromModule(require("../assets/images/Pit.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Pit.png")
+      ).uri,
     },
     name: "Pit",
     id: "28",
@@ -594,6 +687,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595263875/Ultimate%20Characters/Icons/zj5eosi1phfoklbcvngg.png",
       portrait: Asset.fromModule(require("../assets/images/Dark_Pit.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Dark_Pit.png")
+      ).uri,
     },
     name: "Dark Pit",
     id: "1028",
@@ -614,6 +710,9 @@ export const CharacterList = [
       portrait: Asset.fromModule(
         require("../assets/images/Zero_Suit_Samus.png")
       ).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Zero_Suit_Samus.png")
+      ).uri,
     },
     name: "Zero Suit Samus",
     id: "29",
@@ -632,6 +731,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595264211/Ultimate%20Characters/Icons/jgrrjer1mjlsvteav3dh.png",
       portrait: Asset.fromModule(require("../assets/images/Wario.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Wario.png")
+      ).uri,
     },
     name: "Wario",
     id: "30",
@@ -650,6 +752,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595264393/Ultimate%20Characters/Icons/v5776tdmn4axkpjk46n9.png",
       portrait: Asset.fromModule(require("../assets/images/Snake.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Snake.png")
+      ).uri,
     },
     name: "Snake",
     id: "31",
@@ -668,6 +773,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595264563/Ultimate%20Characters/Icons/exnw4xwqdqa5zht1xsyf.png",
       portrait: Asset.fromModule(require("../assets/images/Ike.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Ike.png")
+      ).uri,
     },
     name: "Ike",
     id: "32",
@@ -688,6 +796,9 @@ export const CharacterList = [
       portrait: Asset.fromModule(
         require("../assets/images/Pokemon_Trainer.png")
       ).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Pokemon_Trainer.png")
+      ).uri,
     },
     name: "Pokemon Trainer",
     id: "33-35",
@@ -707,6 +818,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595265008/Ultimate%20Characters/Icons/qewoja1kyygqbcqtj0ty.png",
       portrait: Asset.fromModule(require("../assets/images/Diddy_Kong.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Diddy_Kong.png")
+      ).uri,
     },
     name: "Diddy Kong",
     id: "36",
@@ -725,6 +839,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595265199/Ultimate%20Characters/Icons/axcr2z2uhwbzdljdgsk5.png",
       portrait: Asset.fromModule(require("../assets/images/Lucas.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Lucas.png")
+      ).uri,
     },
     name: "Lucas",
     id: "37",
@@ -743,6 +860,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595265319/Ultimate%20Characters/Icons/i8du3ktijy2ceifcl7rs.png",
       portrait: Asset.fromModule(require("../assets/images/Sonic.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Sonic.png")
+      ).uri,
     },
     name: "Sonic",
     id: "38",
@@ -762,6 +882,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595265460/Ultimate%20Characters/Icons/r6cduawxidkezml8khdx.png",
       portrait: Asset.fromModule(require("../assets/images/King_Dedede.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/King_Dedede.png")
+      ).uri,
     },
     name: "King Dedede",
     id: "39",
@@ -780,6 +903,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595265648/Ultimate%20Characters/Icons/v4vmilfphcpdnc1heilp.png",
       portrait: Asset.fromModule(require("../assets/images/Olimar.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Olimar.png")
+      ).uri,
     },
     name: "Olimar",
     id: "40",
@@ -798,6 +924,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595265813/Ultimate%20Characters/Icons/use8lbowukfewcfzy3il.png",
       portrait: Asset.fromModule(require("../assets/images/Lucario.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Lucario.png")
+      ).uri,
     },
     name: "Lucario",
     id: "41",
@@ -816,6 +945,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595265939/Ultimate%20Characters/Icons/vaoggp5lxk1qr4wocf2v.png",
       portrait: Asset.fromModule(require("../assets/images/ROB.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/ROB.png")
+      ).uri,
     },
     name: "R.O.B.",
     id: "42",
@@ -834,6 +966,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595266122/Ultimate%20Characters/Icons/vqmqapbk94jdzat6g6tc.png",
       portrait: Asset.fromModule(require("../assets/images/Toon_Link.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Toon_Link.png")
+      ).uri,
     },
     name: "Toon Link",
     id: "43",
@@ -852,6 +987,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595266237/Ultimate%20Characters/Icons/momtovlmoul2gs5tlenu.png",
       portrait: Asset.fromModule(require("../assets/images/Wolf.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Wolf.png")
+      ).uri,
     },
     name: "Wolf",
     id: "44",
@@ -870,6 +1008,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595550229/Ultimate%20Characters/Icons/f0a03rl1wrgwfl4rcwwt.png",
       portrait: Asset.fromModule(require("../assets/images/Villager.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Villager.png")
+      ).uri,
     },
     name: "Villager",
     id: "45",
@@ -888,6 +1029,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595550778/Ultimate%20Characters/Icons/ez6sg3td4pq0o0wcbdoj.png",
       portrait: Asset.fromModule(require("../assets/images/Mega_Man.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Mega_Man.png")
+      ).uri,
     },
     name: "Mega Man",
     id: "46",
@@ -908,6 +1052,9 @@ export const CharacterList = [
       portrait: Asset.fromModule(
         require("../assets/images/Wii_Fit_Trainer.png")
       ).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Wii_Fit_Trainer.png")
+      ).uri,
     },
     name: "Wii Fit Trainer",
     id: "47",
@@ -926,6 +1073,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595551321/Ultimate%20Characters/Icons/jszwwl83pbkc2gy7uj0y.png",
       portrait: Asset.fromModule(require("../assets/images/Rosalina.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Rosalina.png")
+      ).uri,
     },
     name: "Rosalina & Luma",
     id: "48",
@@ -945,6 +1095,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595551548/Ultimate%20Characters/Icons/e0t8wsr9xruc3c74scke.png",
       portrait: Asset.fromModule(require("../assets/images/Little_Mac.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Little_Mac.png")
+      ).uri,
     },
     name: "Little Mac",
     id: "49",
@@ -963,6 +1116,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595551923/Ultimate%20Characters/Icons/itsfz1r92y3iqgtm4qvo.png",
       portrait: Asset.fromModule(require("../assets/images/Greninja.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Greninja.png")
+      ).uri,
     },
     name: "Greninja",
     id: "50",
@@ -982,6 +1138,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595552332/Ultimate%20Characters/Icons/wzxqsikk2zq9jspwl9bm.png",
       portrait: Asset.fromModule(require("../assets/images/Mii_Brawler.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Mii_Brawler.png")
+      ).uri,
     },
     name: "Mii Brawler",
     id: "51",
@@ -1002,6 +1161,9 @@ export const CharacterList = [
       portrait: Asset.fromModule(
         require("../assets/images/Mii_Swordfighter.png")
       ).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Mii_Swordfighter.png")
+      ).uri,
     },
     name: "Mii Swordfighter",
     id: "52",
@@ -1021,6 +1183,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595552507/Ultimate%20Characters/Icons/wi8suczj7o1wwrfvapn4.png",
       portrait: Asset.fromModule(require("../assets/images/Mii_Gunner.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Mii_Gunner.png")
+      ).uri,
     },
     name: "Mii Gunner",
     id: "53",
@@ -1039,6 +1204,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595552666/Ultimate%20Characters/Icons/rk39ts4tibwb5ne9icou.png",
       portrait: Asset.fromModule(require("../assets/images/Palutena.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Palutena.png")
+      ).uri,
     },
     name: "Palutena",
     id: "54",
@@ -1057,6 +1225,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595552783/Ultimate%20Characters/Icons/vzz3x3ssvytgupyp3qog.png",
       portrait: Asset.fromModule(require("../assets/images/Pac-Man.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Pac-Man.png")
+      ).uri,
     },
     name: "Pac-Man",
     id: "55",
@@ -1075,6 +1246,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595552922/Ultimate%20Characters/Icons/tloqxpo9hmeovslexn6m.png",
       portrait: Asset.fromModule(require("../assets/images/Robin.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Robin.png")
+      ).uri,
     },
     name: "Robin",
     id: "56",
@@ -1093,6 +1267,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553030/Ultimate%20Characters/Icons/ggdtogz09jiiu4w3lzwl.png",
       portrait: Asset.fromModule(require("../assets/images/Shulk.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Shulk.png")
+      ).uri,
     },
     name: "Shulk",
     id: "57",
@@ -1111,6 +1288,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553178/Ultimate%20Characters/Icons/kxm4lzndmj4yxcs1l9hx.png",
       portrait: Asset.fromModule(require("../assets/images/Bowser_Jr.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Bowser_Jr.png")
+      ).uri,
     },
     name: "Bowser Jr.",
     id: "58",
@@ -1129,6 +1309,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553304/Ultimate%20Characters/Icons/rhbwlrbzfaxoqtokr7yf.png",
       portrait: Asset.fromModule(require("../assets/images/Duck_Hunt.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Duck_Hunt.png")
+      ).uri,
     },
     name: "Duck Hunt",
     id: "59",
@@ -1147,6 +1330,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553458/Ultimate%20Characters/Icons/hk7szzdgutkt9u4i8kov.png",
       portrait: Asset.fromModule(require("../assets/images/Ryu.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Ryu.png")
+      ).uri,
     },
     name: "Ryu",
     id: "60",
@@ -1165,6 +1351,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553607/Ultimate%20Characters/Icons/ctvo71pqwbljfxucwwsj.png",
       portrait: Asset.fromModule(require("../assets/images/Ken.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Ken.png")
+      ).uri,
     },
     name: "Ken",
     id: "1060",
@@ -1183,6 +1372,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553876/Ultimate%20Characters/Icons/yk2vhtzoeno1yo34ezng.png",
       portrait: Asset.fromModule(require("../assets/images/Cloud.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Cloud.png")
+      ).uri,
     },
     name: "Cloud",
     id: "61",
@@ -1201,6 +1393,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553876/Ultimate%20Characters/Icons/yk2vhtzoeno1yo34ezng.png",
       portrait: Asset.fromModule(require("../assets/images/Corrin.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Corrin.png")
+      ).uri,
     },
     name: "Corrin",
     id: "61",
@@ -1219,6 +1414,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595554138/Ultimate%20Characters/Icons/nman7jnoazuhef5sau0s.png",
       portrait: Asset.fromModule(require("../assets/images/Bayonetta.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Bayonetta.png")
+      ).uri,
     },
     name: "Bayonetta",
     id: "63",
@@ -1237,6 +1435,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595554138/Ultimate%20Characters/Icons/nman7jnoazuhef5sau0s.png",
       portrait: Asset.fromModule(require("../assets/images/Inkling.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Inkling.png")
+      ).uri,
     },
     name: "Inkling",
     id: "64",
@@ -1255,6 +1456,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595698333/Ultimate%20Characters/Icons/kxmmeakhmba5pxijb8ay.png",
       portrait: Asset.fromModule(require("../assets/images/Ridley.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Ridley.png")
+      ).uri,
     },
     name: "Ridley",
     id: "65",
@@ -1273,6 +1477,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595698474/Ultimate%20Characters/Icons/smmkbvyoaazxzjyvl5if.png",
       portrait: Asset.fromModule(require("../assets/images/Simon.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Simon.png")
+      ).uri,
     },
     name: "Simon",
     id: "66",
@@ -1291,6 +1498,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595698599/Ultimate%20Characters/Icons/czu2zelvmwdktwfnolxt.png",
       portrait: Asset.fromModule(require("../assets/images/Richter.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Richter.png")
+      ).uri,
     },
     name: "Richter",
     id: "1066",
@@ -1310,6 +1520,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595698772/Ultimate%20Characters/Icons/xfp1vgwbrwejst5dmttz.png",
       portrait: Asset.fromModule(require("../assets/images/King_K._Rool.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/King_K._Rool.png")
+      ).uri,
     },
     name: "King K. Rool",
     id: "67",
@@ -1328,6 +1541,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595698901/Ultimate%20Characters/Icons/zybbki3g0hwmpa6ybb4b.png",
       portrait: Asset.fromModule(require("../assets/images/Isabelle.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Isabelle.png")
+      ).uri,
     },
     name: "Isabelle",
     id: "68",
@@ -1347,6 +1563,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595699009/Ultimate%20Characters/Icons/s2fdhbzperd5qhvkav6s.png",
       portrait: Asset.fromModule(require("../assets/images/Incineroar.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Incineroar.png")
+      ).uri,
     },
     name: "Incineroar",
     id: "69",
@@ -1366,6 +1585,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595699149/Ultimate%20Characters/Icons/zwn1q3ctncghuitbybo3.png",
       portrait: Asset.fromModule(require("../assets/images/Piranha_Plant.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Piranha_Plant.png")
+      ).uri,
     },
     name: "Piranha Plant",
     id: "70",
@@ -1384,6 +1606,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595699295/Ultimate%20Characters/Icons/clwi7yt9k2thtcs6sfkk.png",
       portrait: Asset.fromModule(require("../assets/images/Joker.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Joker.png")
+      ).uri,
     },
     name: "Joker",
     id: "71",
@@ -1402,6 +1627,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595699474/Ultimate%20Characters/Icons/nee4ttazorwhvu3xm5ft.png",
       portrait: Asset.fromModule(require("../assets/images/Hero.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Hero.png")
+      ).uri,
     },
     name: "Hero",
     id: "72",
@@ -1421,6 +1649,9 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595699735/Ultimate%20Characters/Icons/pzutype0y89ulck3gs3h.png",
       portrait: Asset.fromModule(require("../assets/images/Banjoo_Kazooie.png"))
         .uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Banjoo_Kazooie.png")
+      ).uri,
     },
     name: "Banjo & Kazooie",
     id: "73",
@@ -1439,6 +1670,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595699847/Ultimate%20Characters/Icons/lynnfsewq7grm3eiygx2.png",
       portrait: Asset.fromModule(require("../assets/images/Terry.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Terry.png")
+      ).uri,
     },
     name: "Terry",
     id: "74",
@@ -1457,6 +1691,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595699952/Ultimate%20Characters/Icons/aibsspkpveu4yw4fg2xf.png",
       portrait: Asset.fromModule(require("../assets/images/Byleth.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Byleth.png")
+      ).uri,
     },
     name: "Byleth",
     id: "75",
@@ -1475,6 +1712,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595700128/Ultimate%20Characters/Icons/tlzzdzaoswd0jzwmcocr.png",
       portrait: Asset.fromModule(require("../assets/images/Min_Min.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Min_Min.png")
+      ).uri,
     },
     name: "Min Min",
     id: "76",
@@ -1493,6 +1733,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595700128/Ultimate%20Characters/Icons/tlzzdzaoswd0jzwmcocr.png",
       portrait: Asset.fromModule(require("../assets/images/Steve.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Steve.png")
+      ).uri,
     },
     name: "Steve",
     id: "77",
@@ -1511,6 +1754,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595700128/Ultimate%20Characters/Icons/tlzzdzaoswd0jzwmcocr.png",
       portrait: Asset.fromModule(require("../assets/images/Sephiroth.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Sephiroth.png")
+      ).uri,
     },
     name: "Sephiroth",
     id: "78",
@@ -1529,6 +1775,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595700128/Ultimate%20Characters/Icons/tlzzdzaoswd0jzwmcocr.png",
       portrait: Asset.fromModule(require("../assets/images/Pyra.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Pyra.png")
+      ).uri,
     },
     name: "Pyra/Mythra",
     id: "79",
@@ -1547,6 +1796,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595700128/Ultimate%20Characters/Icons/tlzzdzaoswd0jzwmcocr.png",
       portrait: Asset.fromModule(require("../assets/images/Kazuya.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Kazuya.png")
+      ).uri,
     },
     name: "Kazuya",
     id: "80",
@@ -1565,6 +1817,9 @@ export const CharacterList = [
     images: {
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595700128/Ultimate%20Characters/Icons/tlzzdzaoswd0jzwmcocr.png",
       portrait: Asset.fromModule(require("../assets/images/Sora.png")).uri,
+      portrait_2: Asset.fromModule(
+        require("../assets/images/Character_Images/Sora.png")
+      ).uri,
     },
     name: "Sora",
     id: "81",
