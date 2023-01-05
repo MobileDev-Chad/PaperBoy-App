@@ -3,8 +3,6 @@ import { Asset } from "expo-asset";
 export const FranchiseList = [
   {
     id: "1",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/MarioSymbol.png")
     ).uri,
@@ -12,8 +10,6 @@ export const FranchiseList = [
   },
   {
     id: "2",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/DKSymbol.png")
     ).uri,
@@ -21,8 +17,6 @@ export const FranchiseList = [
   },
   {
     id: "3",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/ZeldaSymbol.png")
     ).uri,
@@ -30,8 +24,6 @@ export const FranchiseList = [
   },
   {
     id: "4",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/MetroidSymbol.png")
     ).uri,
@@ -40,8 +32,6 @@ export const FranchiseList = [
 
   {
     id: "5",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/YoshiSymbol.png")
     ).uri,
@@ -49,8 +39,6 @@ export const FranchiseList = [
   },
   {
     id: "6",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/KirbySymbol.png")
     ).uri,
@@ -58,8 +46,6 @@ export const FranchiseList = [
   },
   {
     id: "7",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/StarFoxSymbol.png")
     ).uri,
@@ -67,8 +53,6 @@ export const FranchiseList = [
   },
   {
     id: "8",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/PokemonSymbol.png")
     ).uri,
@@ -77,8 +61,6 @@ export const FranchiseList = [
 
   {
     id: "10",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/EarthboundSymbol.png")
     ).uri,
@@ -86,8 +68,6 @@ export const FranchiseList = [
   },
   {
     id: "11",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/FZeroSymbol.png")
     ).uri,
@@ -96,8 +76,6 @@ export const FranchiseList = [
 
   {
     id: "15",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/IceClimberSymbol.png")
     ).uri,
@@ -106,8 +84,6 @@ export const FranchiseList = [
 
   {
     id: "21",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/FireEmblemSymbol.png")
     ).uri,
@@ -115,8 +91,6 @@ export const FranchiseList = [
   },
   {
     id: "26",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/GameWatchSymbol.png")
     ).uri,
@@ -125,8 +99,6 @@ export const FranchiseList = [
 
   {
     id: "28",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/KidIcarusSymbol.png")
     ).uri,
@@ -135,8 +107,6 @@ export const FranchiseList = [
 
   {
     id: "30",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/WarioSymbol.png")
     ).uri,
@@ -144,8 +114,6 @@ export const FranchiseList = [
   },
   {
     id: "31",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/MetalGearSymbol.png")
     ).uri,
@@ -154,8 +122,6 @@ export const FranchiseList = [
 
   {
     id: "38",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/SonicSymbol.png")
     ).uri,
@@ -164,8 +130,6 @@ export const FranchiseList = [
 
   {
     id: "40",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/PikminSymbol.png")
     ).uri,
@@ -174,8 +138,6 @@ export const FranchiseList = [
 
   {
     id: "42",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/ROBSymbol.png")
     ).uri,
@@ -184,8 +146,6 @@ export const FranchiseList = [
 
   {
     id: "45",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/AnimalCrossingSymbol.png")
     ).uri,
@@ -193,8 +153,6 @@ export const FranchiseList = [
   },
   {
     id: "46",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/MegaManSymbol.png")
     ).uri,
@@ -202,8 +160,6 @@ export const FranchiseList = [
   },
   {
     id: "47",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/WiiFitSymbol.png")
     ).uri,
@@ -212,8 +168,6 @@ export const FranchiseList = [
 
   {
     id: "49",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/PunchOutSymbol.png")
     ).uri,
@@ -222,8 +176,6 @@ export const FranchiseList = [
 
   {
     id: "51",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/SmashBrosSymbol.png")
     ).uri,
@@ -232,8 +184,6 @@ export const FranchiseList = [
 
   {
     id: "55",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/PacManSymbol.png")
     ).uri,
@@ -242,8 +192,6 @@ export const FranchiseList = [
 
   {
     id: "57",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/XenobladeSymbol.png")
     ).uri,
@@ -252,8 +200,6 @@ export const FranchiseList = [
 
   {
     id: "59",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/DuckHuntSymbol.png")
     ).uri,
@@ -261,8 +207,6 @@ export const FranchiseList = [
   },
   {
     id: "60",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/StreetFighterSymbol.png")
     ).uri,
@@ -271,8 +215,6 @@ export const FranchiseList = [
 
   {
     id: "61",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/FinalFantasySymbol.png")
     ).uri,
@@ -280,8 +222,6 @@ export const FranchiseList = [
   },
   {
     id: "63",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/BayonettaSymbol.png")
     ).uri,
@@ -289,8 +229,6 @@ export const FranchiseList = [
   },
   {
     id: "63",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/SplatoonSymbol.png")
     ).uri,
@@ -298,8 +236,6 @@ export const FranchiseList = [
   },
   {
     id: "066",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/CastlevaniaSymbol.png")
     ).uri,
@@ -308,8 +244,6 @@ export const FranchiseList = [
 
   {
     id: "71",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/PersonaSymbol.png")
     ).uri,
@@ -317,8 +251,6 @@ export const FranchiseList = [
   },
   {
     id: "72",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/DragonQuestSymbol.png")
     ).uri,
@@ -326,8 +258,6 @@ export const FranchiseList = [
   },
   {
     id: "73",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/BanjoKazooieSymbol.png")
     ).uri,
@@ -335,8 +265,6 @@ export const FranchiseList = [
   },
   {
     id: "74",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/FatalFurySymbol.png")
     ).uri,
@@ -345,8 +273,6 @@ export const FranchiseList = [
 
   {
     id: "76",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/ARMSSymbol.png")
     ).uri,
@@ -354,8 +280,6 @@ export const FranchiseList = [
   },
   {
     id: "77",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/MinecraftSymbol.png")
     ).uri,
@@ -364,8 +288,6 @@ export const FranchiseList = [
 
   {
     id: "81",
-    background_one: "#232526",
-    background_two: "#414345",
     icon: Asset.fromModule(
       require("../assets/icons/franchise_icons/TekkenSymbol.png")
     ).uri,
@@ -373,8 +295,6 @@ export const FranchiseList = [
   },
   {
     id: "82",
-    background_one: '#232526',
-    background_two: '#414345',
     icon: "https://res.cloudinary.com/dare4cvkk/image/upload/v1672628121/icons%20smash/KingdomHeartsSymbol_o0aigz.png",
     background_one: "#232526",
     background_two: "#414345",
