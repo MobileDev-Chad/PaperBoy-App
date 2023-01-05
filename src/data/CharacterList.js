@@ -18,7 +18,9 @@ export const CharacterList = [
     id: "1",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501902/Series/mario_ncgezx.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MarioSymbol.png")
+      ).uri,
       name: "Super Mario",
     },
   },
@@ -181,7 +183,7 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198731/Ultimate%20Characters/Icons/o07zv6beydfx0erkavfk.png",
       portrait: Asset.fromModule(require("../assets/images/Pikachu.png")).uri,
       portrait_2: Asset.fromModule(
-        require("../assets/images/Character_Image/Pikachu.png")
+        require("../assets/images/Character_Images/Pikachu.png")
       ).uri,
     },
     name: "Pikachu",
@@ -267,7 +269,7 @@ export const CharacterList = [
       portrait: Asset.fromModule(require("../assets/images/Jigglypuff.png"))
         .uri,
       portrait_2: Asset.fromModule(
-        require("../assets/images/Character_Images/JigglyPuff.png")
+        require("../assets/images/Character_Images/Jigglypuff.png")
       ).uri,
     },
     name: "Jigglypuff",
@@ -560,7 +562,7 @@ export const CharacterList = [
       icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213769/Ultimate%20Characters/Icons/zpde70pzlkxolgrfbdya.png",
       portrait: Asset.fromModule(require("../assets/images/Mewtwo.png")).uri,
       portrait_2: Asset.fromModule(
-        require("../assets/images/Character_Images/MewTwo.png")
+        require("../assets/images/Character_Images/Mewtwo.png")
       ).uri,
     },
     name: "Mewtwo",
