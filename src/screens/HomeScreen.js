@@ -22,7 +22,7 @@ const OptionItem = ({ icon, bgColor, franchise, onPress }) => {
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        marginHorizontal: SIZES.base * 0.6,
+        marginHorizontal: SIZES.base * 1.43,
       }}
       onPress={onPress}
     >
@@ -46,7 +46,11 @@ const OptionItem = ({ icon, bgColor, franchise, onPress }) => {
         </LinearGradient>
       </View>
       <Text
-        style={{ marginTop: SIZES.base / 2, color: COLORS.gray, ...FONTS.body4 }}
+        style={{
+          marginTop: SIZES.base / 2,
+          color: COLORS.gray,
+          ...FONTS.body4,
+        }}
       >
         {franchise}
       </Text>
@@ -58,7 +62,7 @@ const HomeScreen = ({ navigation }) => {
   const [franchise, setFranchise] = useState("");
 
   return (
-    <Screen>
+    <View style={{ backgroundColor: COLORS.white, flex: 1 }}>
       {/* Banner */}
 
       <View
@@ -77,7 +81,7 @@ const HomeScreen = ({ navigation }) => {
 
       {/* Franchise */}
 
-      <View style={{ flex: 1, paddingHorizontal:SIZES.padding }}>
+      <View style={{ flex: 1, paddingHorizontal: SIZES.padding }}>
         <ScrollView
           horizontal
           showsVerticalScrollIndicator={false}
@@ -93,7 +97,7 @@ const HomeScreen = ({ navigation }) => {
             renderItem={({ item }) => (
               <OptionItem
                 icon={item.icon}
-                bgColor={[item.background_one, item.background_two]}
+                bgColor={["#232526", "#414345"]}
                 franchise={item.franchise}
                 onPress={() => setFranchise(`${item.franchise}`)}
               />
@@ -130,8 +134,6 @@ const HomeScreen = ({ navigation }) => {
               return characters;
             }
           }).map((item, index) => {
-          
-
             return (
               <View>
                 <TouchableOpacity
@@ -141,7 +143,7 @@ const HomeScreen = ({ navigation }) => {
                     marginHorizontal: SIZES.base,
                   }}
                   onPress={() => {
-                    navigation.navigate(routes.CHARACTER_DETAILS, item);
+                    navigation.push(routes.CHARACTER_DETAILS, {character:item});
                   }}
                 >
                   <Image
@@ -172,7 +174,7 @@ const HomeScreen = ({ navigation }) => {
           })}
         </ScrollView>
       </View>
-    </Screen>
+    </View>
   );
 };
 
