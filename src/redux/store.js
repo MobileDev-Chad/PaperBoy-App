@@ -1,7 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { cartReducer } from "./cartSlice";
-import createWebStorage from "redux-persist/lib/storage/createWebStorage";
-
+import storage from "redux-persist/lib/storage";
 import {
   persistStore,
   persistReducer,
@@ -12,23 +11,6 @@ import {
   PURGE,
   REGISTER,
 } from "redux-persist";
-
-const createNoopStorage = () => {
-  return {
-    getItem(_key) {
-      return Promise.resolve(null);
-    },
-    setItem(_key, value) {
-      return Promise.resolve(value);
-    },
-    removeItem(_key) {
-      return Promise.resolve();
-    },
-  };
-};
-
-const storage =
-  typeof window === "undefined" ? createNoopStorage() : createWebStorage();
 
 const persistConfig = {
   key: "root",
@@ -47,5 +29,4 @@ export const store = configureStore({
     }),
 });
 
-export default storage;
 export const persistor = persistStore(store);
