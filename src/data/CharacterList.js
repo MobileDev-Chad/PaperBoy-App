@@ -44,7 +44,9 @@ export const CharacterList = [
     id: "2",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501875/Series/donkey-kong_tppruc.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/DKSymbol.png")
+      ).uri,
       name: "Donkey Kong",
     },
   },
@@ -66,7 +68,9 @@ export const CharacterList = [
     id: "3",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501930/Series/the-legend-of-zelda_naf34b.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/ZeldaSymbol.png")
+      ).uri,
       name: "Zelda",
     },
   },
@@ -88,7 +92,9 @@ export const CharacterList = [
     id: "4",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595194655/Series/fxdmwjgnygjbaetfvjzy.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MetroidSymbol.png")
+      ).uri,
       name: "Metroid",
     },
   },
@@ -110,7 +116,9 @@ export const CharacterList = [
     id: "04",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595194655/Series/fxdmwjgnygjbaetfvjzy.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MetroidSymbol.png")
+      ).uri,
       name: "Metroid",
     },
   },
@@ -132,7 +140,9 @@ export const CharacterList = [
     id: "5",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595197033/Series/murkcxf7ykhhz3muwo7y.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/YoshiSymbol.png")
+      ).uri,
       name: "Yoshi",
     },
   },
@@ -154,7 +164,9 @@ export const CharacterList = [
     id: "6",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198280/Series/bilh5ggeojt5hxozb8fp.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/KirbySymbol.png")
+      ).uri,
       name: "Kirby",
     },
   },
@@ -176,7 +188,9 @@ export const CharacterList = [
     id: "7",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198574/Series/g6sv3naruucu8qs0vv3u.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/StarFoxSymbol.png")
+      ).uri,
       name: "Star Fox",
     },
   },
@@ -220,7 +234,9 @@ export const CharacterList = [
     id: "9",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501902/Series/mario_ncgezx.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MarioSymbol.png")
+      ).uri,
       name: "Super Mario",
     },
   },
@@ -242,7 +258,9 @@ export const CharacterList = [
     id: "10",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595199211/Series/lpuxxedjrwzwgnvuklt0.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/EarthboundSymbol.png")
+      ).uri,
       name: "EarthBound",
     },
   },
@@ -265,7 +283,9 @@ export const CharacterList = [
     id: "11",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595199363/Series/rt7xqwarfhrhlkqzlf1t.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/FZeroSymbol.png")
+      ).uri,
       name: "F-Zero",
     },
   },
@@ -288,7 +308,9 @@ export const CharacterList = [
     id: "12",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198731/Series/mstlaeic4u1lgbzyfjdw.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/PokemonSymbol.png")
+      ).uri,
       name: "Pokemon",
     },
   },
@@ -310,7 +332,9 @@ export const CharacterList = [
     id: "13",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501902/Series/mario_ncgezx.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MarioSymbol.png")
+      ).uri,
       name: "Super Mario",
     },
   },
@@ -329,7 +353,9 @@ export const CharacterList = [
     id: "013",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501902/Series/mario_ncgezx.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MarioSymbol.png")
+      ).uri,
       name: "Super Mario",
     },
   },
@@ -351,7 +377,9 @@ export const CharacterList = [
     id: "14",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501902/Series/mario_ncgezx.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MarioSymbol.png")
+      ).uri,
       name: "Super Mario",
     },
   },
@@ -374,7 +402,9 @@ export const CharacterList = [
     id: "15",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595211554/Series/elcz77vgrgasu9l1s5hr.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/IceClimberSymbol.png")
+      ).uri,
       name: "Ice Climbers",
     },
   },
@@ -396,7 +426,9 @@ export const CharacterList = [
     id: "16",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501930/Series/the-legend-of-zelda_naf34b.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/ZeldaSymbol.png")
+      ).uri,
       name: "Zelda",
     },
   },
@@ -418,7 +450,9 @@ export const CharacterList = [
     id: "17",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501930/Series/the-legend-of-zelda_naf34b.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/ZeldaSymbol.png")
+      ).uri,
       name: "Zelda",
     },
   },
@@ -440,7 +474,9 @@ export const CharacterList = [
     id: "18",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501902/Series/mario_ncgezx.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MarioSymbol.png")
+      ).uri,
       name: "Super Mario",
     },
   },
@@ -484,7 +520,9 @@ export const CharacterList = [
     id: "20",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198574/Series/g6sv3naruucu8qs0vv3u.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/StarFoxSymbol.png")
+      ).uri,
       name: "Star Fox",
     },
   },
@@ -551,7 +589,9 @@ export const CharacterList = [
     id: "22",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501930/Series/the-legend-of-zelda_naf34b.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/ZeldaSymbol.png")
+      ).uri,
       name: "Zelda",
     },
   },
@@ -573,7 +613,9 @@ export const CharacterList = [
     id: "23",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501930/Series/the-legend-of-zelda_naf34b.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/ZeldaSymbol.png")
+      ).uri,
       name: "Zelda",
     },
   },
@@ -662,7 +704,9 @@ export const CharacterList = [
     id: "26",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595214130/Series/gr73dvd2a3sfx7q4gujm.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/GameWatchSymbol.png")
+      ).uri,
       name: "Game & Watch",
     },
   },
@@ -685,7 +729,9 @@ export const CharacterList = [
     id: "27",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198280/Series/bilh5ggeojt5hxozb8fp.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/KirbySymbol.png")
+      ).uri,
       name: "Kirby",
     },
   },
@@ -707,7 +753,9 @@ export const CharacterList = [
     id: "28",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595263748/Series/avacpo60oulifezowbm3.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/KidIcarusSymbol.png")
+      ).uri,
       name: "Kid Icarus",
     },
   },
@@ -729,7 +777,9 @@ export const CharacterList = [
     id: "1028",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595263748/Series/avacpo60oulifezowbm3.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/KidIcarusSymbol.png")
+      ).uri,
       name: "Kid Icarus",
     },
   },
@@ -753,7 +803,9 @@ export const CharacterList = [
     id: "29",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595194655/Series/fxdmwjgnygjbaetfvjzy.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MetroidSymbol.png")
+      ).uri,
       name: "Metroid",
     },
   },
@@ -775,7 +827,9 @@ export const CharacterList = [
     id: "30",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595264211/Series/d2w452qfebtvfkrpyrzj.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/WarioSymbol.png")
+      ).uri,
       name: "Wario Ware",
     },
   },
@@ -797,7 +851,9 @@ export const CharacterList = [
     id: "31",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595264393/Series/bhoweuqpf6xchrfo8kwl.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MetalGearSymbol.png")
+      ).uri,
       name: "Metal Gear",
     },
   },
@@ -843,7 +899,9 @@ export const CharacterList = [
     id: "33-35",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198731/Series/mstlaeic4u1lgbzyfjdw.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/PokemonSymbol.png")
+      ).uri,
       name: "Pokemon",
     },
   },
@@ -865,7 +923,9 @@ export const CharacterList = [
     id: "36",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501875/Series/donkey-kong_tppruc.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/DKSymbol.png")
+      ).uri,
       name: "Donkey Kong",
     },
   },
@@ -887,7 +947,9 @@ export const CharacterList = [
     id: "37",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595199211/Series/lpuxxedjrwzwgnvuklt0.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/EarthboundSymbol.png")
+      ).uri,
       name: "EarthBound",
     },
   },
@@ -909,7 +971,9 @@ export const CharacterList = [
     id: "38",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595265319/Series/ouolfmapifqlj13smqpn.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/SonicSymbol.png")
+      ).uri,
       name: "Sonic",
     },
   },
@@ -932,7 +996,9 @@ export const CharacterList = [
     id: "39",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198280/Series/bilh5ggeojt5hxozb8fp.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/KirbySymbol.png")
+      ).uri,
       name: "Kirby",
     },
   },
@@ -954,7 +1020,9 @@ export const CharacterList = [
     id: "40",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595265648/Series/lqi9s9rpx8zerubf4xb8.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/PikminSymbol.png")
+      ).uri,
       name: "Pikmin",
     },
   },
@@ -976,7 +1044,9 @@ export const CharacterList = [
     id: "41",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198731/Series/mstlaeic4u1lgbzyfjdw.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/PokemonSymbol.png")
+      ).uri,
       name: "Pokemon",
     },
   },
@@ -998,7 +1068,9 @@ export const CharacterList = [
     id: "42",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595265939/Series/jkh9sgvqmtpaeahhdurk.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/ROBSymbol.png")
+      ).uri,
       name: "R.O.B.",
     },
   },
@@ -1020,7 +1092,9 @@ export const CharacterList = [
     id: "43",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501930/Series/the-legend-of-zelda_naf34b.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/ZeldaSymbol.png")
+      ).uri,
       name: "Zelda",
     },
   },
@@ -1042,7 +1116,9 @@ export const CharacterList = [
     id: "44",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198574/Series/g6sv3naruucu8qs0vv3u.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/StarFoxSymbol.png")
+      ).uri,
       name: "Star Fox",
     },
   },
@@ -1064,7 +1140,9 @@ export const CharacterList = [
     id: "45",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595550229/Series/x0xuomhx7l56zuz34q1j.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/AnimalCrossingSymbol.png")
+      ).uri,
       name: "Animal Crossing",
     },
   },
@@ -1086,7 +1164,9 @@ export const CharacterList = [
     id: "46",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595550778/Series/menz9dyv8cama8xtgn2t.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MegaManSymbol.png")
+      ).uri,
       name: "Mega Man",
     },
   },
@@ -1110,7 +1190,9 @@ export const CharacterList = [
     id: "47",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595551025/Series/p0t4eg7dznvxwbzunp8p.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/WiiFitSymbol.png")
+      ).uri,
       name: "Wii Fit",
     },
   },
@@ -1132,7 +1214,9 @@ export const CharacterList = [
     id: "48",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501902/Series/mario_ncgezx.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MarioSymbol.png")
+      ).uri,
       name: "Super Mario",
     },
   },
@@ -1155,7 +1239,9 @@ export const CharacterList = [
     id: "49",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595551548/Series/jeeijhihz95liemloxpm.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/PunchOutSymbol.png")
+      ).uri,
       name: "Punch-Out!!",
     },
   },
@@ -1177,7 +1263,9 @@ export const CharacterList = [
     id: "50",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198731/Series/mstlaeic4u1lgbzyfjdw.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/PokemonSymbol.png")
+      ).uri,
       name: "Pokemon",
     },
   },
@@ -1200,7 +1288,9 @@ export const CharacterList = [
     id: "51",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595552332/Series/ofc2xcyawclffowvoqu1.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/SmashBrosSymbol.png")
+      ).uri,
       name: "Ultimate",
     },
   },
@@ -1224,7 +1314,9 @@ export const CharacterList = [
     id: "52",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595552332/Series/ofc2xcyawclffowvoqu1.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/SmashBrosSymbol.png")
+      ).uri,
       name: "Ultimate",
     },
   },
@@ -1247,7 +1339,9 @@ export const CharacterList = [
     id: "53",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595552332/Series/ofc2xcyawclffowvoqu1.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/SmashBrosSymbol.png")
+      ).uri,
       name: "Ultimate",
     },
   },
@@ -1269,7 +1363,9 @@ export const CharacterList = [
     id: "54",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595263748/Series/avacpo60oulifezowbm3.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/KidIcarusSymbol.png")
+      ).uri,
       name: "Kid Icarus",
     },
   },
@@ -1291,7 +1387,9 @@ export const CharacterList = [
     id: "55",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595552783/Series/y1lryzos8jirj8yjgexq.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/PacManSymbol.png")
+      ).uri,
       name: "Pac-Man",
     },
   },
@@ -1335,7 +1433,9 @@ export const CharacterList = [
     id: "57",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553030/Series/a1pc0xxngopvv6i8u60k.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/XenobladeSymbol.png")
+      ).uri,
       name: "Xenoblade",
     },
   },
@@ -1357,7 +1457,9 @@ export const CharacterList = [
     id: "58",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501902/Series/mario_ncgezx.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MarioSymbol.png")
+      ).uri,
       name: "Super Mario",
     },
   },
@@ -1379,7 +1481,9 @@ export const CharacterList = [
     id: "59",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553304/Series/qtvpmemuwitz4mdo0vuv.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/DuckHuntSymbol.png")
+      ).uri,
       name: "Duck Hunt",
     },
   },
@@ -1401,7 +1505,9 @@ export const CharacterList = [
     id: "60",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553458/Series/styqpzn2nur6otldctue.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/StreetFighterSymbol.png")
+      ).uri,
       name: "Street Fighter",
     },
   },
@@ -1423,7 +1529,9 @@ export const CharacterList = [
     id: "1060",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553458/Series/styqpzn2nur6otldctue.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/StreetFighterSymbol.png")
+      ).uri,
       name: "Street Fighter",
     },
   },
@@ -1445,7 +1553,9 @@ export const CharacterList = [
     id: "61",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553876/Series/rsyt1blkqi8raf6uhjky.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/StreetFighterSymbol.png")
+      ).uri,
       name: "Final Fantasy",
     },
   },
@@ -1489,7 +1599,9 @@ export const CharacterList = [
     id: "63",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595554138/Series/tuovz4rsz9rb3h4ixdsg.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/BayonettaSymbol.png")
+      ).uri,
       name: "Bayonetta",
     },
   },
@@ -1511,7 +1623,9 @@ export const CharacterList = [
     id: "64",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595554138/Series/tuovz4rsz9rb3h4ixdsg.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/SplatoonSymbol.png")
+      ).uri,
       name: "Splatoon",
     },
   },
@@ -1533,7 +1647,9 @@ export const CharacterList = [
     id: "65",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595194655/Series/fxdmwjgnygjbaetfvjzy.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MetroidSymbol.png")
+      ).uri,
       name: "Metroid",
     },
   },
@@ -1555,7 +1671,9 @@ export const CharacterList = [
     id: "66",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595698474/Series/yenuncg5oknxmowsq3hh.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/CastlevaniaSymbol.png")
+      ).uri,
       name: "Castlevania",
     },
   },
@@ -1577,7 +1695,9 @@ export const CharacterList = [
     id: "066",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595698474/Series/yenuncg5oknxmowsq3hh.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/CastlevaniaSymbol.png")
+      ).uri,
       name: "Castlevania",
     },
   },
@@ -1600,7 +1720,9 @@ export const CharacterList = [
     id: "67",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501875/Series/donkey-kong_tppruc.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/DKSymbol.png")
+      ).uri,
       name: "Donkey Kong",
     },
   },
@@ -1622,7 +1744,9 @@ export const CharacterList = [
     id: "68",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595550229/Series/x0xuomhx7l56zuz34q1j.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/AnimalCrossingSymbol.png")
+      ).uri,
       name: "Animal Crossing",
     },
   },
@@ -1645,7 +1769,9 @@ export const CharacterList = [
     id: "69",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198731/Series/mstlaeic4u1lgbzyfjdw.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/PokemonSymbol.png")
+      ).uri,
       name: "Pokemon",
     },
   },
@@ -1668,7 +1794,9 @@ export const CharacterList = [
     id: "70",
     series: {
       price: "6.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1594501902/Series/mario_ncgezx.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MarioSymbol.png")
+      ).uri,
       name: "Super Mario",
     },
   },
@@ -1690,7 +1818,9 @@ export const CharacterList = [
     id: "71",
     series: {
       price: "6.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595699295/Series/eyindgcmwk93heqhqt5u.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/PersonaSymbol.png")
+      ).uri,
       name: "Persona",
     },
   },
@@ -1712,7 +1842,9 @@ export const CharacterList = [
     id: "72",
     series: {
       price: "6.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595699474/Series/qbsfx54saqnvlxpoqsp1.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/DragonQuestSymbol.png")
+      ).uri,
       name: "Dragon Quest",
     },
   },
@@ -1735,7 +1867,9 @@ export const CharacterList = [
     id: "73",
     series: {
       price: "6.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595699735/Series/bn619ul35qgaoec7pmmp.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/BanjoKazooieSymbol.png")
+      ).uri,
       name: "Banjo-Kazooie",
     },
   },
@@ -1757,7 +1891,9 @@ export const CharacterList = [
     id: "74",
     series: {
       price: "6.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595699847/Series/tvccohorx22fmsbebnsx.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/FatalFurySymbol.png")
+      ).uri,
       name: "Fatal Fury",
     },
   },
@@ -1801,7 +1937,9 @@ export const CharacterList = [
     id: "76",
     series: {
       price: "6.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595700128/Series/qnwoxcjwqlxxt8sxwfbj.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/ARMSSymbol.png")
+      ).uri,
       name: "ARMS",
     },
   },
@@ -1823,7 +1961,9 @@ export const CharacterList = [
     id: "77",
     series: {
       price: "6.99",
-      icon: "https://res.cloudinary.com/dare4cvkk/image/upload/v1635344820/Steve/MinecraftSymbol_bzvnuh.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/MinecraftSymbol.png")
+      ).uri,
       name: "MINECRAFT",
     },
   },
@@ -1845,7 +1985,9 @@ export const CharacterList = [
     id: "78",
     series: {
       price: "6.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553876/Series/rsyt1blkqi8raf6uhjky.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/StreetFighterSymbol.png")
+      ).uri,
       name: "Final Fantasy",
     },
   },
@@ -1867,7 +2009,9 @@ export const CharacterList = [
     id: "79",
     series: {
       price: "6.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553030/Series/a1pc0xxngopvv6i8u60k.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/XenobladeSymbol.png")
+      ).uri,
       name: "Xenoblade",
     },
   },
@@ -1889,7 +2033,9 @@ export const CharacterList = [
     id: "80",
     series: {
       price: "6.99",
-      icon: "https://res.cloudinary.com/dare4cvkk/image/upload/v1635345280/Kazuya/TekkenSymbol_urnhuy.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/TekkenSymbol.png")
+      ).uri,
       name: "Tekken",
     },
   },
@@ -1911,7 +2057,9 @@ export const CharacterList = [
     id: "81",
     series: {
       price: "6.99",
-      icon: "https://res.cloudinary.com/dare4cvkk/image/upload/v1635345332/Sora/KingdomHeartsSymbol_kljquu.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/KingdomHeartsSymbol.png")
+      ).uri,
       name: "Kingdom Hearts",
     },
   },
