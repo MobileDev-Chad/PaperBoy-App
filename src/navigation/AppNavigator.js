@@ -1,4 +1,5 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { getFocusedRouteNameFromRoute } from "@react-navigation/native";
 import TabIcon from "../components/TabIcon";
 import HomeNavigator from "./HomeNavigator";
 import { ContactScreen, SearchScreen, Cart } from "../screens";
@@ -29,13 +30,20 @@ export default AppNavigator = () => {
       <Tab.Screen
         name="Home"
         component={HomeNavigator}
-        options={{
-          // unmountOnBlur: true,
+        options={({ route }) => ({
           tabBarIcon: ({ focused, color }) => (
             <TabIcon name="home" color={color} focused={focused} />
           ),
           headerShown: false,
-        }}
+          tabBarStyle: ((route) => {
+            const routeName = getFocusedRouteNameFromRoute(route) ?? "";
+            console.log(routeName);
+            if (routeName === "Details") {
+              return { display: "none" };
+            }
+            return;
+          })(route),
+        })}
       ></Tab.Screen>
 
       <Tab.Screen
