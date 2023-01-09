@@ -8,7 +8,6 @@ import {
   StyleSheet,
 } from "react-native";
 import React, { useState } from "react";
-import Screen from "../components/Screen";
 import CharacterList from "../data/CharacterList";
 import FranchiseList from "../data/FranchiseList";
 import routes from "../navigation/routes";
@@ -74,14 +73,14 @@ const HomeScreen = ({ navigation }) => {
       >
         <Image
           source={images.hero}
-          resizeMode="cover"
+          resizeMode="contain"
           style={{ width: "100%", height: "100%", borderRadius: 15 }}
         />
       </View>
 
       {/* Franchise */}
 
-      <View style={{ flex: 1, paddingHorizontal: SIZES.padding }}>
+      <View style={{  paddingHorizontal: SIZES.padding }}>
         <ScrollView
           horizontal
           showsVerticalScrollIndicator={false}
@@ -148,7 +147,7 @@ const HomeScreen = ({ navigation }) => {
                 >
                   <Image
                     source={{ uri: item.images.portrait }}
-                    resizeMode="contain"
+                    resizeMode="stretch"
                     style={{
                       width: SIZES.width * 0.28,
                       height: "82%",
