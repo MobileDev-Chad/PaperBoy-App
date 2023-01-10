@@ -659,7 +659,9 @@ export const CharacterList = [
     id: "21",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213106/Series/uj3kecbitighgwf6khrd.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/FireEmblemSymbol.png")
+      ).uri,
       name: "Fire Emblem",
     },
   },
@@ -686,7 +688,9 @@ export const CharacterList = [
     id: "021",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213106/Series/uj3kecbitighgwf6khrd.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/FireEmblemSymbol.png")
+      ).uri,
       name: "Fire Emblem",
     },
   },
@@ -798,7 +802,9 @@ export const CharacterList = [
     id: "25",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213106/Series/uj3kecbitighgwf6khrd.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/FireEmblemSymbol.png")
+      ).uri,
       name: "Fire Emblem",
     },
   },
@@ -825,7 +831,9 @@ export const CharacterList = [
     id: "025",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213106/Series/uj3kecbitighgwf6khrd.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/FireEmblemSymbol.png")
+      ).uri,
       name: "Fire Emblem",
     },
   },
@@ -1057,7 +1065,9 @@ export const CharacterList = [
     id: "32",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213106/Series/uj3kecbitighgwf6khrd.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/FireEmblemSymbol.png")
+      ).uri,
       name: "Fire Emblem",
     },
   },
@@ -1703,7 +1713,9 @@ export const CharacterList = [
     id: "56",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213106/Series/uj3kecbitighgwf6khrd.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/FireEmblemSymbol.png")
+      ).uri,
       name: "Fire Emblem",
     },
   },
@@ -1902,7 +1914,9 @@ export const CharacterList = [
     id: "61",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595553876/Series/rsyt1blkqi8raf6uhjky.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/FireEmblemSymbol.png")
+      ).uri,
       name: "Fire Emblem",
     },
   },
@@ -2310,7 +2324,9 @@ export const CharacterList = [
     id: "75",
     series: {
       price: "6.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595213106/Series/uj3kecbitighgwf6khrd.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/FireEmblemSymbol.png")
+      ).uri,
       name: "Fire Emblem",
     },
   },
