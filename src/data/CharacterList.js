@@ -257,7 +257,9 @@ export const CharacterList = [
     id: "8",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198731/Series/mstlaeic4u1lgbzyfjdw.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/PokemonSymbol.png")
+      ).uri,
       name: "Pokemon",
     },
   },
@@ -776,7 +778,9 @@ export const CharacterList = [
     id: "24",
     series: {
       price: "4.99",
-      icon: "https://res.cloudinary.com/dfen7mkm8/image/upload/v1595198731/Series/mstlaeic4u1lgbzyfjdw.svg",
+      icon: Asset.fromModule(
+        require("../assets/icons/franchise_icons/PokemonSymbol.png")
+      ).uri,
       name: "Pokemon",
     },
   },

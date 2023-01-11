@@ -15,10 +15,10 @@ function Total() {
   };
 
   return (
-    <p>
+    <>
       Total ({getTotal().totalQuantity} items) :{" "}
-      <strong className="text-success">${getTotal().totalPrice.toFixed(2)}</strong>
-    </p>
+      <>${getTotal().totalPrice.toFixed(2)}</>
+    </>
   );
 }
 
