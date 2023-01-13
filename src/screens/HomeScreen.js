@@ -80,7 +80,7 @@ const HomeScreen = ({ navigation }) => {
 
       {/* Franchise */}
 
-      <View style={{  paddingHorizontal: SIZES.padding }}>
+      <View style={{ paddingHorizontal: SIZES.padding }}>
         <ScrollView
           horizontal
           showsVerticalScrollIndicator={false}
@@ -142,7 +142,14 @@ const HomeScreen = ({ navigation }) => {
                     marginHorizontal: SIZES.base,
                   }}
                   onPress={() => {
-                    navigation.push(routes.CHARACTER_DETAILS, {character:item});
+                    navigation.push(routes.CHARACTER_DETAILS, {
+                      character: item,
+                      id: item.id,
+                      name: item.name,
+                      portrait:item.images.portrait,
+                      price: item.series.price,
+                      icon: item.series.icon
+                    });
                   }}
                 >
                   <Image
