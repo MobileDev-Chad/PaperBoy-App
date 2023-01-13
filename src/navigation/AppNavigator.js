@@ -1,5 +1,6 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { getFocusedRouteNameFromRoute } from "@react-navigation/native";
+import { useSelector } from "react-redux";
 import TabIcon from "../components/TabIcon";
 import HomeNavigator from "./HomeNavigator";
 import { ContactScreen, SearchScreen, Cart } from "../screens";
@@ -8,6 +9,16 @@ import { COLORS } from "../constants";
 const Tab = createBottomTabNavigator();
 
 export default AppNavigator = () => {
+  const cart = useSelector((state) => state.cart);
+
+  const getTotalQuantity = () => {
+    let totalQuantity = 0;
+    cart.forEach((item) => {
+      totalQuantity += item.quantity;
+    });
+    return totalQuantity;
+  };
+
   const tabOptions = {
     tabBarShowLabel: false,
     tabBarActiveTintColor: COLORS.primary,
@@ -80,6 +91,7 @@ export default AppNavigator = () => {
           tabBarIcon: ({ focused, color }) => (
             <TabIcon name="shopping-cart" color={color} focused={focused} />
           ),
+          tabBarBadge: getTotalQuantity() || 0,
           headerShown: false,
         }}
       />
