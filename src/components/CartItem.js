@@ -11,13 +11,21 @@ import Swipeable from "react-native-gesture-handler/Swipeable";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { COLORS, FONTS, SIZES } from "../constants";
 
-const CartItem = ({ id, key, portrait, name, price, icon, quantity, renderRightActions }) => {
+const CartItem = ({
+  id,
+  portrait,
+  name,
+  price,
+  icon,
+  quantity,
+  renderRightActions,
+}) => {
   const dispatch = useDispatch();
 
   return (
     <GestureHandlerRootView>
       <Swipeable renderRightActions={renderRightActions}>
-        <View key={key}>
+        <View key={id}>
           <View style={{ marginHorizontal: SIZES.padding, width: "100%" }}>
             <View
               style={{
@@ -73,9 +81,15 @@ const CartItem = ({ id, key, portrait, name, price, icon, quantity, renderRightA
                   </TouchableOpacity>
                 </View>
 
-                <ListItemSeperator />
+                <Image
+                  source={{ uri: icon }}
+                  resizeMode="contain"
+                  style={{ height: 40, width: 40, alignSelf:'center' }}
+                />
+                
               </View>
             </View>
+            <ListItemSeperator />
           </View>
         </View>
       </Swipeable>
