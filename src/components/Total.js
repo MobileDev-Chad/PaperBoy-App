@@ -1,9 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const cart = useSelector((state) => state.cart);
-
 function Total() {
+  const cart = useSelector((state) => state.cart);
+
   const getTotal = () => {
     let totalQuantity = 0;
     let totalPrice = 0;
@@ -20,6 +20,6 @@ function Total() {
       <>${getTotal().totalPrice.toFixed(2)}</>
     </>
   );
-};
+}
 
 export default Total;
