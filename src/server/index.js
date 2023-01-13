@@ -17,7 +17,7 @@ app.post("/poster", async (req, res) => {
     // Simple validation
     if (!amount || !name)
       return res.status(400).json({ message: "All fields are required" });
-    amount = parseInt(amount);
+    amount = parseFloat(amount);
     // Initiate payment
     const paymentIntent = await stripe.paymentIntents.create({
       amount: Math.round(amount * 100),
