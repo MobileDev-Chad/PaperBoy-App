@@ -39,6 +39,22 @@ export default AppNavigator = () => {
   return (
     <Tab.Navigator screenOptions={tabOptions}>
       <Tab.Screen
+        name="Contact"
+        component={ContactScreen}
+        options={{
+          tabBarIcon: ({ focused, color }) => (
+            <TabIcon
+              name="email"
+              color={color}
+              type="entypo"
+              focused={focused}
+            />
+          ),
+          headerShown: false,
+        }}
+      />
+
+      <Tab.Screen
         name="Home"
         component={HomeNavigator}
         options={({ route }) => ({
@@ -55,33 +71,6 @@ export default AppNavigator = () => {
             return;
           })(route),
         })}
-      ></Tab.Screen>
-
-      <Tab.Screen
-        name="Search"
-        component={SearchScreen}
-        options={{
-          tabBarIcon: ({ focused, color }) => (
-            <TabIcon name="search" color={color} focused={focused} />
-          ),
-          headerShown: false,
-        }}
-      />
-
-      <Tab.Screen
-        name="Contact"
-        component={ContactScreen}
-        options={{
-          tabBarIcon: ({ focused, color }) => (
-            <TabIcon
-              name="email"
-              color={color}
-              type="entypo"
-              focused={focused}
-            />
-          ),
-          headerShown: false,
-        }}
       />
 
       <Tab.Screen
