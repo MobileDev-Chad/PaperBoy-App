@@ -3,23 +3,16 @@
 ## Install
 
 ```sh
-npm install
+yarn install
 ```
 ## Usage
 
 ```sh
-npm start
-```
-## Build
-
-```sh
-npm run build
+expo start
 ```
 
 ## Preview
 ![Image-Demo](https://user-images.githubusercontent.com/86134973/212458024-e6bbfb9d-b57c-4da1-87f0-1266ccac3a8b.png)
-
-
 
 
 ## Tech Stack
