@@ -17,7 +17,7 @@ npm run build
 ```
 
 ## Preview
-![Image-Demo](https://user-images.githubusercontent.com/86134973/212457885-e26caf63-2b85-4d6d-86c7-435ad2a3cd88.png)
+![Image-Demo](https://user-images.githubusercontent.com/86134973/212458024-e6bbfb9d-b57c-4da1-87f0-1266ccac3a8b.png)
 
 
 
