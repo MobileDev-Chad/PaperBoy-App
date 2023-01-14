@@ -12,7 +12,8 @@ expo start
 ```
 
 ## Preview
-![Image-Demo](https://user-images.githubusercontent.com/86134973/212458024-e6bbfb9d-b57c-4da1-87f0-1266ccac3a8b.png)
+![Image-Demo](https://user-images.githubusercontent.com/86134973/212500686-de962d4f-111d-4e58-973e-915357104bb4.png)
+
 
 
 ## Tech Stack
