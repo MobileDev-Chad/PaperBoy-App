@@ -17,7 +17,7 @@ expo start
 
 
 ## Tech Stack
-Expo, React-Native, Stripe, Redux ToolKit,
+Expo, React-Native, Stripe, Swipeable, LottieFiles, Redux ToolKit
 
 
 ## Features
