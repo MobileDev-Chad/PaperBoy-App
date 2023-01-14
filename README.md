@@ -23,6 +23,7 @@ Expo, React-Native, Stripe, Swipeable, LottieFiles, Redux ToolKit
 ## Features
 - Add items to cart
 - Accept payments via Stripe
+- List deletion via Swipeable
 - Form implementation using Yup/Formik
 
 ### Connect With Me
