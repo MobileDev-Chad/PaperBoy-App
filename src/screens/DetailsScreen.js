@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, removeItem } from "../redux/cartSlice";
+import routes from "../navigation/routes";
 import { LinearGradient } from "expo-linear-gradient";
 import { COLORS, FONTS, SIZES, icons } from "../constants";
 
@@ -116,7 +117,7 @@ const DetailsScreen = ({ route, navigation }) => {
           }}
         >
           <View style={{ flex: 1 }}>
-            <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+            <TouchableOpacity onPress={() => navigation.navigate(routes.HOME_SCREEN)}>
               <Image
                 source={icons.back}
                 resizeMode="contain"
