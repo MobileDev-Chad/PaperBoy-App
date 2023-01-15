@@ -2,7 +2,7 @@ import React from "react";
 import { TouchableOpacity, Image } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { HomeScreen, DetailsScreen } from "../screens";
-import { COLORS, SIZES, icons } from "../constants";
+import { SIZES, icons } from "../constants";
 
 const Stack = createStackNavigator();
 
@@ -13,9 +13,7 @@ const HomeNavigator = () => (
       component={HomeScreen}
       options={{
         title: null,
-        headerStyle: {
-          backgroundColor: COLORS.white,
-        },
+
         headerLeft: ({ onPress }) => (
           <TouchableOpacity
             style={{ marginLeft: SIZES.padding }}
