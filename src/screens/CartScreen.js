@@ -25,7 +25,9 @@ const CartScreen = ({ navigation }) => {
         }}
       >
         <View style={{ marginTop: SIZES.radius, marginLeft: SIZES.padding }}>
-          <TouchableOpacity onPress={() => navigation.goBack()}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate(routes.HOME_SCREEN)}
+          >
             <Image
               source={icons.back}
               resizeMode="contain"
