@@ -27,6 +27,7 @@ const Stack = createStackNavigator();
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {
+  
   const [fontsLoaded] = useFonts({
     "Roboto-Black": require("./src/assets/fonts/Roboto-Black.ttf"),
     "Roboto-Bold": require("./src/assets/fonts/Roboto-Bold.ttf"),
@@ -49,7 +50,7 @@ export default function App() {
         <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
           <NavigationContainer theme={theme} ref={navigationRef}>
             <Stack.Navigator initialRouteName={"Welcome"}>
-
+              
               {/* Screens */}
               <Stack.Screen
                 name="Welcome"
@@ -79,46 +80,12 @@ export default function App() {
               />
 
               {/* Tabs */}
-             
+
               <Stack.Screen
                 name="AppNavigator"
                 component={AppNavigator}
                 options={{
                   headerShown: false,
-                  title: null,
-                  headerStyle: {
-                    backgroundColor: COLORS.white,
-                  },
-                  headerLeft: ({ onPress }) => (
-                    <TouchableOpacity
-                      style={{ marginLeft: SIZES.padding }}
-                      onPress={onPress}
-                    >
-                      <Image
-                        source={icons.back}
-                        resizeMode="contain"
-                        style={{
-                          width: 25,
-                          height: 25,
-                        }}
-                      />
-                    </TouchableOpacity>
-                  ),
-                  headerRight: () => (
-                    <TouchableOpacity
-                      style={{ marginRight: SIZES.padding }}
-                      onPress={() => console.log("Menu")}
-                    >
-                      <Image
-                        source={icons.menu}
-                        resizeMode="contain"
-                        style={{
-                          width: 25,
-                          height: 25,
-                        }}
-                      />
-                    </TouchableOpacity>
-                  ),
                 }}
               />
             </Stack.Navigator>
