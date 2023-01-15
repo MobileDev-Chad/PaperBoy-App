@@ -4,6 +4,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { COLORS, images, SIZES, FONTS } from "../constants";
 import { useNavigation } from '@react-navigation/native';
 import Screen from "../components/Screen";
+import routes from "../navigation/routes";
 
 const WelcomeScreen = () => {
   const navigation = useNavigation(); 
@@ -42,7 +43,7 @@ const WelcomeScreen = () => {
             alignItems: "center",
             justifyContent: "center",
           }]}
-            onPress={() => navigation.navigate('AppNavigator')}
+            onPress={() => navigation.navigate(routes.APP_NAVIGATOR)}
         >
           <LinearGradient
             style={{
