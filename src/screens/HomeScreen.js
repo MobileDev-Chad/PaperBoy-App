@@ -117,68 +117,70 @@ const HomeScreen = ({ navigation }) => {
           Characters
         </Text>
 
-        <ScrollView
-          horizontal
-          showsVerticalScrollIndicator={false}
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={{
-            marginTop: SIZES.base,
-            paddingBottom: SIZES.radius,
-          }}
-        >
-          {CharacterList.filter((characters) => {
-            if (franchise === "") {
-              return CharacterList;
-            } else if (franchise === characters.series.name) {
-              return characters;
-            }
-          }).map((item, index) => {
-            return (
-              <View>
-                <TouchableOpacity
-                  key={item.id}
-                  style={{
-                    justifyContent: "center",
-                    marginHorizontal: SIZES.padding,
-                  }}
-                  onPress={() => {
-                    navigation.push(routes.CHARACTER_DETAILS, {
-                      character: item,
-                      id: item.id,
-                      name: item.name,
-                      portrait:item.images.portrait,
-                      price: item.series.price,
-                      icon: item.series.icon
-                    });
-                  }}
-                >
-                  <Image
-                    source={{ uri: item.images.portrait }}
-                    resizeMode="stretch"
+        <View style={{ marginHorizontal: SIZES.padding }}>
+          <ScrollView
+            horizontal
+            showsVerticalScrollIndicator={false}
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{
+              marginTop: SIZES.base,
+              paddingBottom: SIZES.radius,
+            }}
+          >
+            {CharacterList.filter((characters) => {
+              if (franchise === "") {
+                return CharacterList;
+              } else if (franchise === characters.series.name) {
+                return characters;
+              }
+            }).map((item, index) => {
+              return (
+                <View>
+                  <TouchableOpacity
+                    key={item.id}
                     style={{
-                      width: SIZES.width * 0.28,
-                      height: "82%",
-                      borderRadius: 15,
+                      justifyContent: "center",
+                      marginRight: SIZES.padding,
                     }}
-                  />
-                  <View
-                    style={{
-                      flexDirection: "row",
-                      marginTop: SIZES.base / 2,
-                      justifyContent: "space-between",
-                      alignItems: "center",
+                    onPress={() => {
+                      navigation.push(routes.CHARACTER_DETAILS, {
+                        character: item,
+                        id: item.id,
+                        name: item.name,
+                        portrait: item.images.portrait,
+                        price: item.series.price,
+                        icon: item.series.icon,
+                      });
                     }}
                   >
-                    <Text style={{ ...FONTS.h4 }}>{item.name}</Text>
-                    <Text style={{ color: COLORS.darkgreen }}>
-                      ${item.series.price}
-                    </Text>
-                  </View>
-                </TouchableOpacity>
-              </View>
-            );
-          })}
-        </ScrollView>
+                    <Image
+                      source={{ uri: item.images.portrait }}
+                      resizeMode="stretch"
+                      style={{
+                        width: SIZES.width * 0.25,
+                        height: "75%",
+                        borderRadius: 15,
+                      }}
+                    />
+                    <View
+                      style={{
+                        flexDirection: "row",
+                        marginTop: SIZES.base / 2,
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Text style={{ ...FONTS.h4 }}>{item.name}</Text>
+                      <Text style={{ color: COLORS.darkgreen }}>
+                        ${item.series.price}
+                      </Text>
+                    </View>
+                  </TouchableOpacity>
+                </View>
+              );
+            })}
+          </ScrollView>
+        </View>
       </View>
     </View>
   );
