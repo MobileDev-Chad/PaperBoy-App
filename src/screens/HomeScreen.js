@@ -139,7 +139,7 @@ const HomeScreen = ({ navigation }) => {
                   key={item.id}
                   style={{
                     justifyContent: "center",
-                    marginHorizontal: SIZES.base,
+                    marginHorizontal: SIZES.padding,
                   }}
                   onPress={() => {
                     navigation.push(routes.CHARACTER_DETAILS, {
