@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Image, TouchableOpacity } from "react-native";
-import * as Notifications from 'expo-notifications';
+import * as Notifications from "expo-notifications";
 import * as yup from "yup";
 
 import {
@@ -19,8 +19,13 @@ const validationSchema = yup.object().shape({
 
 const ContactScreen = ({ navigation }) => {
 
-  const handleSubmit = ({values}) => {
-    values(initialValues);
+  const handleSubmit = async (values, onSubmitProps) => {
+    try {
+      //send  request to api
+      onSubmitProps.resetForm()
+    } catch (error) {
+      console.log(error.response.data);
+    }
 
     Notifications.presentLocalNotificationAsync({
       title: "Awesome!",
@@ -37,7 +42,7 @@ const ContactScreen = ({ navigation }) => {
           style={{ width: "70%", height: "70%" }}
         />
       </View>
-     
+
       <Form
         initialValues={{ name: "", email: "", message: "" }}
         onSubmit={handleSubmit}
@@ -71,8 +76,7 @@ const ContactScreen = ({ navigation }) => {
             icon="message"
             name="message"
             width="90%"
-           
-            style={{ paddingHorizontal: 30,paddingRight:20, }}
+            style={{ paddingHorizontal: 30, paddingRight: 20 }}
           />
         </View>
 
